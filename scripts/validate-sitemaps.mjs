@@ -71,87 +71,87 @@ const ENGLISH_HTML_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
 const LOCALE_BLOG_REDIRECT_PAGES = 18;
 const TOTAL_HTML_PAGES =
 	ENGLISH_HTML_PAGES + I18N_LOCALES * (PRODUCT_PAGES_PER_LOCALE + LOCALE_BLOG_REDIRECT_PAGES);
-const HREFLANG_PER_URL = 23;
+const HREFLANG_PER_URL = 22;
 const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
 
 /** Built HTML that intentionally 301s — allowed to be absent from sitemaps */
 const REDIRECT_ONLY_PATHS = new Set([
-	'/best-tarkov-cheats/',
-	'/tarkov-aimbot-hack/',
-	'/tarkov-esp-hack/',
-	'/tarkov-cheats-2026/',
-	'/undetected-tarkov-cheats/',
-	'/tarkov-mod-menu/',
-	'/tarkov-unlock-all/',
-	'/tarkov-soft-aim/',
-	'/tarkov-wallhack/',
-	'/tarkov-cheat-download/',
-	'/battleye-bypass/',
+	'/best-valorant-hacks/',
+	'/valorant-aimbot-hack/',
+	'/valorant-esp-hack/',
+	'/valorant-hacks-2026/',
+	'/undetected-valorant-hacks/',
+	'/valorant-mod-menu/',
+	'/valorant-unlock-all/',
+	'/valorant-soft-aim/',
+	'/valorant-wallhack/',
+	'/valorant-hack-download/',
+	'/vanguard-bypass/',
 ]);
 
 const ENGLISH_PATHS = [
 	'/',
-	'/tarkov-esp/',
-	'/tarkov-aimbot/',
+	'/valorant-esp/',
+	'/valorant-aimbot/',
 	'/features/',
 	'/pricing/',
 	'/setup/',
 	'/updates/',
 	'/faq/',
 	'/support/',
-	'/undetected-tarkov-cheats/',
-	'/tarkov-wallhack/',
-	'/tarkov-radar-hack/',
-	'/battleye-bypass/',
-	'/tarkov-cheats-2026/',
-	'/tarkov-cheats/',
-	'/tarkov-cheat-download/',
-	'/tarkov-mod-menu/',
-	'/tarkov-soft-aim/',
-	'/tarkov-unlock-all/',
+	'/undetected-valorant-hacks/',
+	'/valorant-wallhack/',
+	'/valorant-radar-hack/',
+	'/vanguard-bypass/',
+	'/valorant-hacks-2026/',
+	'/valorant-hacks/',
+	'/valorant-hack-download/',
+	'/valorant-mod-menu/',
+	'/valorant-soft-aim/',
+	'/valorant-unlock-all/',
 	'/privacy-policy/',
 	'/refund-policy/',
 	'/terms/',
 	'/blog/',
-	'/blog/tarkov-scav-run-aggressive-strategies/',
-	'/blog/tarkov-loot-routes-guide/',
-	'/blog/tarkov-weapon-tier-list/',
-	'/blog/tarkov-skin-leaks-guide/',
-	'/blog/tarkov-tournament-meta-guide/',
-	'/blog/tarkov-pro-settings-guide/',
-	'/blog/tarkov-warmup-maps-ranked/',
-	'/blog/tarkov-patch-notes-guide/',
-	'/blog/tarkov-cheats-complete-guide-2026/',
-	'/blog/escape-from-tarkov-cheats-buyers-guide/',
-	'/blog/tarkov-cheats-2026-whats-new/',
-	'/blog/tarkov-aimbot-settings-guide/',
-	'/blog/tarkov-esp-wallhack-explained/',
-	'/blog/undetected-tarkov-cheats-battleye/',
-	'/blog/tarkov-cheats-vs-cheatvault-comparison/',
-	'/blog/elitefn-vs-tarkov-cheats-two-week-test/',
-	'/blog/tarkov-cheats-vs-ghostware-features-pricing/',
+	'/blog/valorant-deathmatch-aggressive-strategies/',
+	'/blog/valorant-buy-rounds-guide/',
+	'/blog/valorant-weapon-tier-list/',
+	'/blog/valorant-skin-leaks-guide/',
+	'/blog/valorant-tournament-meta-guide/',
+	'/blog/valorant-pro-settings-guide/',
+	'/blog/valorant-warmup-maps-ranked/',
+	'/blog/valorant-patch-notes-guide/',
+	'/blog/valorant-hacks-complete-guide-2026/',
+	'/blog/valorant-hacks-buyers-guide/',
+	'/blog/valorant-hacks-2026-whats-new/',
+	'/blog/valorant-aimbot-settings-guide/',
+	'/blog/valorant-esp-wallhack-explained/',
+	'/blog/undetected-valorant-hacks-vanguard/',
+	'/blog/valorant-hacks-vs-budget-shops/',
+	'/blog/valorant-cheat-two-week-test/',
+	'/blog/valorant-hacks-vs-esp-only-tools/',
 	'/reviews/',
-	'/reviews/tarkov-soft-aim-review-xkrypt0/',
-	'/reviews/tarkov-esp-scav-run-review-buildsr4k/',
-	'/reviews/tarkov-cloud-dma-review-dma-wizard/',
-	'/reviews/tarkov-soft-aim-review-ctrl-player99/',
-	'/reviews/tarkov-cheat-setup-review-stormchaser07/',
-	'/reviews/tarkov-loot-esp-review-lootgoblinx/',
-	'/reviews/tarkov-soft-aim-raid-review-rankedgrind42/',
-	'/reviews/tarkov-radar-hack-review-vanlifeeft/',
-	'/reviews/tarkov-battleye-update-review-patchdaymike/',
-	'/reviews/tarkov-sniper-soft-aim-review-snipezonly/',
-	'/faq/what-are-tarkov-cheats/',
-	'/faq/are-tarkov-cheats-undetected-in-2026/',
-	'/faq/pmc-raids-and-scav-runs/',
+	'/reviews/valorant-soft-aim-review-xkrypt0/',
+	'/reviews/valorant-esp-deathmatch-review-buildsr4k/',
+	'/reviews/valorant-cloud-dma-review-dma-wizard/',
+	'/reviews/valorant-soft-aim-review-ctrl-player99/',
+	'/reviews/valorant-cheat-setup-review-stormchaser07/',
+	'/reviews/valorant-spike-esp-review-lootgoblinx/',
+	'/reviews/valorant-soft-aim-ranked-review-rankedgrind42/',
+	'/reviews/valorant-radar-hack-review-vanlifeval/',
+	'/reviews/valorant-vanguard-update-review-patchdaymike/',
+	'/reviews/valorant-sniper-soft-aim-review-snipezonly/',
+	'/faq/what-are-valorant-hacks/',
+	'/faq/are-valorant-hacks-undetected-in-2026/',
+	'/faq/competitive-unrated-deathmatch/',
 	'/faq/esp-wallhack-radar-or-aimbot/',
 	'/faq/how-are-licenses-delivered/',
 	'/faq/where-to-check-updates/',
 	'/faq/how-to-contact-support/',
-	'/faq/what-is-a-tarkov-wallhack/',
-	'/faq/does-tarkov-cheats-include-radar-hack/',
-	'/faq/battleye-anti-cheat-and-tarkov-cheats/',
-	'/faq/buy-undetected-tarkov-cheats-windows-pc/',
+	'/faq/what-is-a-valorant-wallhack/',
+	'/faq/does-valorant-hacks-include-radar-hack/',
+	'/faq/vanguard-anti-cheat-and-valorant-hacks/',
+	'/faq/buy-undetected-valorant-hacks-windows-pc/',
 ];
 
 const LOCALE_CODES = [
@@ -239,6 +239,16 @@ async function main() {
 		bump();
 	} else ok('_redirects 301s sitemap-index.xml → sitemap.xml');
 
+	if (!redirects.includes('/sitemap-i18n.xml /sitemap.xml 301')) {
+		fail('_redirects missing 301: /sitemap-i18n.xml → sitemap.xml (duplicate URL list)');
+		bump();
+	} else ok('_redirects 301s sitemap-i18n.xml → sitemap.xml');
+
+	if (!redirects.includes('/sitemap-0.xml /sitemap.xml 301')) {
+		fail('_redirects missing 301: /sitemap-0.xml → sitemap.xml');
+		bump();
+	} else ok('_redirects 301s sitemap-0.xml → sitemap.xml');
+
 	// Per-locale sitemap files
 	const localeSitemapLocs = {};
 	let localeUrlTotal = 0;
@@ -306,6 +316,14 @@ async function main() {
 	if (errors === 0) {
 		ok('Image sitemap hosts Features, Store (/pricing/), and Status (/updates/)');
 	}
+
+	for (const host of uniqueImageHosts) {
+		if (!enLocs.includes(host)) {
+			fail(`sitemap-images.xml host is not in sitemap-en.xml (redirect or unknown): ${host}`);
+			bump();
+		}
+	}
+	if (errors === 0) ok('Every image-sitemap host is an indexable English URL');
 
 	// English path coverage (skip intentional 301 stubs)
 	for (const p of ENGLISH_PATHS) {
@@ -394,7 +412,57 @@ async function main() {
 	if (homeHreflang !== HREFLANG_PER_URL) {
 		fail(`Homepage hreflang links: expected ${HREFLANG_PER_URL}, got ${homeHreflang}`);
 		bump();
-	} else ok(`Homepage has ${HREFLANG_PER_URL} hreflang alternates (22 locales + x-default)`);
+	} else ok(`Homepage has ${HREFLANG_PER_URL} hreflang alternates (one unique URL per locale)`);
+
+	function sitemapUrlBlocks(xml) {
+		return xml.split(/<url>/i).slice(1).map((b) => b.split(/<\/url>/i)[0]);
+	}
+
+	function assertHreflangQuality(xml, fileLabel) {
+		const today = new Date().toISOString().slice(0, 10);
+		let missingSelf = 0;
+		let dupLang = 0;
+		let dupHref = 0;
+		let futureLastmod = 0;
+		for (const block of sitemapUrlBlocks(xml)) {
+			const loc = block.match(/<loc>([^<]+)<\/loc>/)?.[1];
+			if (!loc) continue;
+			if (!block.includes(`href="${loc}"`)) missingSelf += 1;
+			const langs = [...block.matchAll(/\bhreflang="([^"]+)"/g)].map((m) => m[1]);
+			if (new Set(langs).size !== langs.length) dupLang += 1;
+			const hrefs = [...block.matchAll(/\bhreflang="[^"]+"\s+href="([^"]+)"/g)].map((m) => m[1]);
+			if (new Set(hrefs).size !== hrefs.length) dupHref += 1;
+			const lastmod = block.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1];
+			if (lastmod && lastmod > today) futureLastmod += 1;
+		}
+		if (missingSelf) {
+			fail(`${fileLabel}: ${missingSelf} URLs missing self-referential hreflang`);
+			bump();
+		}
+		if (dupLang) {
+			fail(`${fileLabel}: ${dupLang} URLs have duplicate hreflang values`);
+			bump();
+		}
+		if (dupHref) {
+			fail(`${fileLabel}: ${dupHref} URLs have the same href on more than one hreflang tag`);
+			bump();
+		}
+		if (futureLastmod) {
+			fail(`${fileLabel}: ${futureLastmod} URLs have lastmod in the future`);
+			bump();
+		}
+		return missingSelf + dupLang + dupHref + futureLastmod === 0;
+	}
+
+	const enHreflangOk = assertHreflangQuality(sitemapEn, 'sitemap-en.xml');
+	let localeHreflangOk = true;
+	for (const locale of I18N_LOCALE_CODES) {
+		const xml = await readFile(path.join(DIST, `sitemap-${locale}.xml`), 'utf8');
+		if (!assertHreflangQuality(xml, `sitemap-${locale}.xml`)) localeHreflangOk = false;
+	}
+	if (enHreflangOk && localeHreflangOk) {
+		ok('Every sitemap URL has unique hreflang tags, a self-referential alternate, and a real lastmod');
+	}
 
 	// sitemap.xml index — EN + 21 locale sitemaps + images
 	if (indexLocs.length !== SITEMAP_INDEX_ENTRIES) {
@@ -418,6 +486,17 @@ async function main() {
 		}
 	}
 	if (errors === 0) ok('sitemap.xml lists English, all 21 locale, and image sitemaps');
+
+	if (indexLocs.includes(`${SITE}/sitemap-i18n.xml`)) {
+		fail('sitemap.xml must not list sitemap-i18n.xml (duplicate of per-locale sitemaps)');
+		bump();
+	} else ok('sitemap.xml does not list sitemap-i18n.xml (avoids duplicate GSC submissions)');
+
+	const uniqueEnLocs = new Set(enLocs);
+	if (uniqueEnLocs.size !== enLocs.length) {
+		fail(`sitemap-en.xml has duplicate <loc> values (${enLocs.length} locs, ${uniqueEnLocs.size} unique)`);
+		bump();
+	} else ok('sitemap-en.xml has unique <loc> values');
 
 	// robots.txt — single GSC submission path
 	if (!robots.includes(`${SITE}/sitemap.xml`)) {

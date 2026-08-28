@@ -3,7 +3,7 @@ import { getBlogSitemapEntries } from '../data/blog/helpers';
 import { siteConfig } from '../data/site';
 import { i18nLocaleCodes, localeSitemapUrl } from '../data/sitemap-locale';
 import { latestPageLastmod } from '../data/sitemap-meta';
-import { renderSitemapIndexXml, sitemapResponseHeaders } from '../data/sitemap-xml';
+import { assertLastmod, renderSitemapIndexXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 
 export const prerender = true;
 
@@ -12,11 +12,14 @@ export const prerender = true;
  * Page URLs live in sitemap-en.xml (Features=/features/, Store=/pricing/, Status=/updates/).
  */
 export const GET: APIRoute = () => {
-	const pageLastmod = latestPageLastmod();
+	const pageLastmod = assertLastmod(latestPageLastmod(), 'sitemap-index');
 	// sitemap-en.xml also contains blog URLs, so its lastmod must cover the newest post update.
-	const englishLastmod = getBlogSitemapEntries().reduce(
-		(max, entry) => (entry.lastmod > max ? entry.lastmod : max),
-		pageLastmod,
+	const englishLastmod = assertLastmod(
+		getBlogSitemapEntries().reduce(
+			(max, entry) => (entry.lastmod > max ? entry.lastmod : max),
+			pageLastmod,
+		),
+		'sitemap-en',
 	);
 
 	const subSitemaps: { loc: string; lastmod: string }[] = [

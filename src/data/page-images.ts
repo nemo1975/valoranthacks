@@ -1,16 +1,16 @@
 import { siteConfig } from './site';
-import { tarkovImages } from './tarkov';
+import { valorantImages } from './valorant';
 import { pageIds, type PageId } from './i18n/routing';
 import { pageSitemapImageLabels } from './brand-sitemap';
 
 /** Rotating product screenshots for FAQ / review detail URLs. */
 export const crawlPhotoPool = [
-	tarkovImages.espWallhack,
-	tarkovImages.aimbotCombat,
-	tarkovImages.aimbotSkeleton,
-	tarkovImages.playerEsp,
-	tarkovImages.cheatsCombat,
-	'/images/tarkov-cheats-esp.webp',
+	valorantImages.espWallhack,
+	valorantImages.aimbotCombat,
+	valorantImages.aimbotSkeleton,
+	valorantImages.playerEsp,
+	valorantImages.cheatsCombat,
+	'/images/valorant-hacks-esp.webp',
 ] as const;
 
 /**
@@ -18,31 +18,31 @@ export const crawlPhotoPool = [
  * Prefer compressed WebP screenshots so Google can fetch them quickly.
  */
 export const pageImageSrcById: Record<PageId, string> = {
-	home: '/images/tarkov-cheats-hero-1024w.webp',
-	'tarkov-esp': tarkovImages.playerEsp,
-	'tarkov-aimbot': tarkovImages.aimbotCombat,
-	features: tarkovImages.aimbotSkeleton,
-	pricing: tarkovImages.cheatsCombat,
-	setup: tarkovImages.playerEsp,
-	updates: '/images/tarkov-cheats-hero-1024w.webp',
-	faq: tarkovImages.aimbotSkeleton,
-	support: tarkovImages.cheatsCombat,
-	undetected: tarkovImages.espWallhack,
-	wallhack: tarkovImages.espWallhack,
-	radar: tarkovImages.playerEsp,
-	battleye: tarkovImages.aimbotCombat,
-	'cheats-2026': '/images/tarkov-cheats-hero-1024w.webp',
-	hacks: tarkovImages.cheatsCombat,
-	'cheat-download': tarkovImages.cheatsCombat,
-	'mod-menu': tarkovImages.playerEsp,
-	'soft-aim': tarkovImages.aimbotSkeleton,
-	'best-cheats': '/images/tarkov-cheats-hero-1024w.webp',
-	'aimbot-hack': tarkovImages.aimbotSkeleton,
-	'esp-hack': tarkovImages.espWallhack,
-	'unlock-all': tarkovImages.playerEsp,
-	privacy: tarkovImages.aimbotCombat,
-	refund: tarkovImages.cheatsCombat,
-	terms: tarkovImages.aimbotSkeleton,
+	home: '/images/valorant-hacks-hero-1024w.webp',
+	'valorant-esp': valorantImages.playerEsp,
+	'valorant-aimbot': valorantImages.aimbotCombat,
+	features: valorantImages.aimbotSkeleton,
+	pricing: valorantImages.cheatsCombat,
+	setup: valorantImages.playerEsp,
+	updates: '/images/valorant-hacks-hero-1024w.webp',
+	faq: valorantImages.aimbotSkeleton,
+	support: valorantImages.cheatsCombat,
+	undetected: valorantImages.espWallhack,
+	wallhack: valorantImages.espWallhack,
+	radar: valorantImages.playerEsp,
+	vanguard: valorantImages.aimbotCombat,
+	'cheats-2026': '/images/valorant-hacks-hero-1024w.webp',
+	hacks: valorantImages.cheatsCombat,
+	'cheat-download': valorantImages.cheatsCombat,
+	'mod-menu': valorantImages.playerEsp,
+	'soft-aim': valorantImages.aimbotSkeleton,
+	'best-cheats': '/images/valorant-hacks-hero-1024w.webp',
+	'aimbot-hack': valorantImages.aimbotSkeleton,
+	'esp-hack': valorantImages.espWallhack,
+	'unlock-all': valorantImages.playerEsp,
+	privacy: valorantImages.aimbotCombat,
+	refund: valorantImages.cheatsCombat,
+	terms: valorantImages.aimbotSkeleton,
 };
 
 for (const pageId of pageIds) {

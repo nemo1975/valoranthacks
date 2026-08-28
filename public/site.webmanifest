@@ -1,11 +1,11 @@
 {
-  "name": "Tarkov Cheats",
-  "short_name": "Tarkov",
-  "description": "Undetected tarkov cheats — ESP, aimbot, and radar for PC",
+  "name": "Valorant Hacks",
+  "short_name": "Valorant",
+  "description": "Undetected valorant hacks — ESP, aimbot, and radar for PC",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0811",
-  "theme_color": "#0a0811",
+  "background_color": "#0F1419",
+  "theme_color": "#0F1419",
   "icons": [
     {
       "src": "/favicon.png",

@@ -170,6 +170,19 @@ async function main() {
 			}
 
 			const hrefLangs = [...block.matchAll(/hreflang="([^"]+)"\s+href="([^"]+)"/g)];
+			if (hrefLangs.length === 0) {
+				fail(`${file}: missing hreflang on ${pageLoc}`);
+			} else if (!hrefLangs.some(([, , href]) => href === pageLoc)) {
+				fail(`${file}: missing self-referential hreflang on ${pageLoc}`);
+			}
+			const langs = hrefLangs.map(([, lang]) => lang);
+			if (new Set(langs).size !== langs.length) {
+				fail(`${file}: duplicate hreflang values on ${pageLoc}`);
+			}
+			const hrefs = hrefLangs.map(([, , href]) => href);
+			if (new Set(hrefs).size !== hrefs.length) {
+				fail(`${file}: duplicate hreflang hrefs on ${pageLoc}`);
+			}
 			for (const [, lang, href] of hrefLangs) {
 				const hp = pathFromUrl(href);
 				if (REDIRECT_MAP.has(hp) || REDIRECT_MAP.has(hp.replace(/\/$/, ''))) {

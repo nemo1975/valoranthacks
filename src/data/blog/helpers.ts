@@ -1,31 +1,30 @@
 import { siteConfig } from '../site';
-import { tarkovImages } from '../tarkov';
+import { valorantImages } from '../valorant';
 import { blogSitemapImageMeta } from '../brand-sitemap';
 import {
 	defaultLocale,
 	localeCodes,
 	type LocaleCode,
-	locales,
 } from '../i18n/locales';
-import { resolvePageContextFromPath } from '../i18n/routing';
+import { resolvePageContextFromPath, getSelfHreflangAlternates } from '../i18n/routing';
 import type { BlogImageKey, BlogPostDefinition, BlogTranslation, ResolvedBlogPost } from './types';
 import { blogPosts as rawBlogPosts } from './posts.generated';
 
 const imageMap: Record<BlogImageKey, string> = {
-	hero: tarkovImages.espWallhack,
-	espWallhack: tarkovImages.espWallhack,
-	aimbotCombat: tarkovImages.aimbotCombat,
-	aimbotSkeleton: tarkovImages.aimbotSkeleton,
-	squadFight: tarkovImages.aimbotCombat,
-	headerArt: tarkovImages.playerEsp,
-	cheatsPackage: tarkovImages.espWallhack,
-	playerEsp: tarkovImages.playerEsp,
-	rebootFight: tarkovImages.aimbotCombat,
-	battleRoyaleCombat: tarkovImages.cheatsCombat,
-	battleRoyaleIslandMap: tarkovImages.espWallhack,
+	hero: valorantImages.espWallhack,
+	espWallhack: valorantImages.espWallhack,
+	aimbotCombat: valorantImages.aimbotCombat,
+	aimbotSkeleton: valorantImages.aimbotSkeleton,
+	squadFight: valorantImages.aimbotCombat,
+	headerArt: valorantImages.playerEsp,
+	cheatsPackage: valorantImages.espWallhack,
+	playerEsp: valorantImages.playerEsp,
+	rebootFight: valorantImages.aimbotCombat,
+	battleRoyaleCombat: valorantImages.cheatsCombat,
+	battleRoyaleIslandMap: valorantImages.espWallhack,
 };
 
-const FALLBACK_BLOG_IMAGE = tarkovImages.espWallhack;
+const FALLBACK_BLOG_IMAGE = valorantImages.espWallhack;
 
 function expandTranslations(
 	translations: Partial<Record<LocaleCode, BlogTranslation>> & { en: BlogTranslation },
@@ -126,20 +125,14 @@ export function getBlogPostHreflangAlternates(
 	post: BlogPostDefinition,
 	_currentLocale: LocaleCode = defaultLocale,
 ) {
-	const href = absoluteBlogUrl(defaultLocale, post.translations[defaultLocale].slug);
-	return [
-		{ hreflang: locales.find((l) => l.code === defaultLocale)!.hreflang, href },
-		{ hreflang: 'x-default' as const, href },
-	];
+	return getSelfHreflangAlternates(
+		getBlogPostPath(defaultLocale, post.translations[defaultLocale].slug),
+	);
 }
 
 /** Hreflang alternates for a blog index — English-only until real translations exist. */
 export function getBlogIndexHreflangAlternates(_currentLocale: LocaleCode = defaultLocale) {
-	const href = absoluteBlogUrl(defaultLocale);
-	return [
-		{ hreflang: locales.find((l) => l.code === defaultLocale)!.hreflang, href },
-		{ hreflang: 'x-default' as const, href },
-	];
+	return getSelfHreflangAlternates(getBlogBasePath(defaultLocale));
 }
 
 /**
@@ -186,7 +179,7 @@ export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
 	for (const post of blogPosts) {
 		const t = post.translations[locale];
 		const imageSrc = getBlogImageSrc(post.imageKey);
-		const isProductPost = /Tarkov Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
+		const isProductPost = /Valorant Hacks|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
 		entries.push({
 			path: getBlogPostPath(locale, t.slug),
 			lastmod: post.updated,

@@ -3,8 +3,8 @@ import Layout from './Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { getUi } from '../data/i18n';
-import { getLocalizedPath, resolvePageContextFromPath, type PageId } from '../data/i18n/routing';
-import { tarkovImages } from '../data/tarkov';
+import { getLocalizedPath, resolvePageContextFromPath, type HreflangAlternate, type PageId } from '../data/i18n/routing';
+import { valorantImages } from '../data/valorant';
 import {
 	heroPreloadSrc,
 	heroSizes,
@@ -38,6 +38,9 @@ interface Props {
 	locale?: import('../data/i18n/locales').LocaleCode;
 	pageId?: import('../data/i18n/content.generated').PageId;
 	extraGraph?: Record<string, unknown>[];
+	hreflangAlternates?: HreflangAlternate[];
+	crumbs?: { label: string; href?: string }[];
+	type?: 'website' | 'article';
 }
 
 const {
@@ -47,9 +50,9 @@ const {
 	heading,
 	intro,
 	eyebrow,
-	heroImage = tarkovImages.hero,
+	heroImage = valorantImages.hero,
 	heroAlt,
-	gallery = tarkovImages.product.slice(0, 3),
+	gallery = valorantImages.gallery,
 	galleryTitle,
 	ctaPrimary,
 	ctaSecondary,
@@ -58,13 +61,16 @@ const {
 	locale = defaultLocale,
 	pageId: pageIdProp,
 	extraGraph = [],
+	hreflangAlternates,
+	crumbs,
+	type = 'website',
 } = Astro.props;
 
 const t = getT(locale);
 const resolvedHeroAlt =
 	(heroAlt && heroAlt.trim()) ||
 	t('images.hero') ||
-	`${siteConfig.name} — Escape from Tarkov ESP and aimbot`;
+	`${siteConfig.name} — Valorant ESP and aimbot`;
 const resolvedGalleryTitle = galleryTitle ?? t('common.inGameLook');
 
 function resolvePageId(path: string): PageId | undefined {
@@ -86,15 +92,15 @@ const normalizedGallery = gallery
 	})
 	.filter((item) => Boolean(item.src));
 
-const breadcrumbs = [
+const breadcrumbs = crumbs ?? [
 	{ label: ui.nav.home, href: homeHref },
 	{ label: heading },
 ];
 
 const useHomeHero =
-	heroImage === tarkovImages.hero ||
+	heroImage === valorantImages.hero ||
 	heroImage === siteConfig.defaultOgImage ||
-	heroImage.includes('tarkov-cheats-hero');
+	heroImage.includes('valorant-hacks-hero');
 ---
 
 <Layout
@@ -106,6 +112,8 @@ const useHomeHero =
 	breadcrumbs={breadcrumbs}
 	locale={locale}
 	pageId={pageId}
+	hreflangAlternates={hreflangAlternates}
+	type={type}
 	extraGraph={extraGraph}
 	lcpImage={useHomeHero ? heroPreloadSrc : heroImage.endsWith('.webp') ? heroImage : undefined}
 	lcpImageSrcSet={useHomeHero ? heroSrcSet : contentSrcSet(heroImage)}
@@ -151,9 +159,18 @@ const useHomeHero =
 			<div class="shell banner__shell">
 				<div class="banner__content">
 					<nav class="banner__crumbs" aria-label={t('common.breadcrumb')}>
-						<a href={homeHref}>{ui.nav.home}</a>
-						<span aria-hidden="true">/</span>
-						<span aria-current="page">{heading}</span>
+						{
+							breadcrumbs.map((crumb, index) => (
+								<span class="banner__crumb">
+									{index > 0 && <span aria-hidden="true">/</span>}
+									{crumb.href ? (
+										<a href={crumb.href}>{crumb.label}</a>
+									) : (
+										<span aria-current="page">{crumb.label}</span>
+									)}
+								</span>
+							))
+						}
 					</nav>
 					<p class="banner__eyebrow">{resolvedEyebrow}</p>
 					<h1 class="banner__title">{heading}</h1>
@@ -231,9 +248,13 @@ const useHomeHero =
 	.banner {
 		position: relative;
 		isolation: isolate;
-		min-height: clamp(16rem, 32vw, 22rem);
+		/* Native hero art is 1024×576 (16:9). Match that so Viper is not cropped. */
+		aspect-ratio: 16 / 9;
+		width: 100%;
+		min-height: 18rem;
+		height: auto;
 		display: grid;
-		align-items: end;
+		align-items: center;
 		border-bottom: 1px solid var(--line-soft);
 		background: var(--bg);
 	}
@@ -247,10 +268,11 @@ const useHomeHero =
 
 	.banner__media picture,
 	.banner__img {
+		display: block;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: center center;
+		object-position: 70% 50%;
 	}
 
 	.banner__scrim {
@@ -282,6 +304,12 @@ const useHomeHero =
 		margin: 0 0 0.75rem;
 		font-size: 0.8rem;
 		color: var(--ink-faint);
+	}
+
+	.banner__crumb {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
 	}
 
 	.banner__crumbs a {
@@ -532,10 +560,17 @@ const useHomeHero =
 
 	@media (max-width: 760px) {
 		.banner {
-			min-height: min(52svh, 22rem);
+			aspect-ratio: auto;
+			min-height: min(56svh, 28rem);
+			max-height: none;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
+		}
+
+		.banner__img {
+			object-fit: cover;
+			object-position: 78% 18%;
 		}
 
 		.banner__shell {

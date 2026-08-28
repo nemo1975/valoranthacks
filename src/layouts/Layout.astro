@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { productInfo, siteConfig } from '../data/site';
+import { areaServedPlaces, productInfo, siteConfig } from '../data/site';
 import { brandTheme, brandThemeInlineStyle, brandThemeRootCss } from '../data/brand-theme';
 import I18nHead from '../components/I18nHead.astro';
 import LocaleSuggest from '../components/LocaleSuggest.astro';
@@ -64,7 +64,7 @@ const localeMeta = localeMap[locale];
 const ogLocaleAlternates = locales.filter((l) => l.code !== locale);
 const schemaLanguage = localeMeta.ogLocale.replace('_', '-');
 const schemaLanguages = locales.map((l) => l.ogLocale.replace('_', '-'));
-const worldwidePlace = { '@type': 'Place' as const, name: siteConfig.market };
+const worldwidePlace = [...areaServedPlaces];
 
 const graph: Record<string, unknown>[] = [
 	{
@@ -162,7 +162,7 @@ if (aboutNode) {
 ---
 
 <!doctype html>
-<html lang={locale} dir={localeMeta.dir} style={brandThemeInlineStyle()}>
+<html lang={schemaLanguage} dir={localeMeta.dir} style={brandThemeInlineStyle()}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -247,13 +247,13 @@ if (aboutNode) {
 		)}
 
 		<title>{title}</title>
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=z2" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=z2" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png?v=z2" />
+		<link rel="shortcut icon" href="/favicon.ico?v=z2" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=z2" />
 		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+		<link rel="sitemap" type="application/xml" title="Sitemap" href={new URL('/sitemap.xml', siteConfig.url).href} />
 	</head>
 	<body>
 		{pageId && <LocaleSuggest currentLocale={locale} pageId={pageId} />}

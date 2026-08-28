@@ -24,7 +24,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	heroSizes={heroSizes}
 	heroWidth={heroWidth}
 	heroHeight={heroHeight}
-	useBrandHero={locale === 'en'}
+	useBrandHero
 />
 
 <style is:global>
@@ -32,10 +32,10 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		--hero-pad-y: clamp(1rem, 2vw, 1.75rem);
 		--hero-stack: clamp(0.5rem, 1.1vw, 0.75rem);
 		/*
-		 * Bar is a bit shorter than the native 1024/409 (~2.5:1) art.
-		 * Image stays undistorted via object-fit: cover (crops edges, no squash).
+		 * Native art is 1024×576 (16:9). The bar is a bit wider so copy sits on the left
+		 * and Viper stays on the right via object-fit: cover.
 		 */
-		--hero-ratio: 3.15 / 1;
+		--hero-ratio: 2.15 / 1;
 		position: relative;
 		isolation: isolate;
 		display: grid;
@@ -66,7 +66,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		/* Cover = keep proportions; crop top/bottom of the shorter bar */
 		object-fit: cover;
 		/* Prefer a bit higher in the frame so the USEC head stays in view */
-		object-position: right 28%;
+		object-position: 82% 22%;
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
@@ -297,7 +297,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 		.hero__media img {
 			object-fit: cover;
-			object-position: 78% 10%;
+			object-position: 78% 18%;
 		}
 
 		.hero__veil {

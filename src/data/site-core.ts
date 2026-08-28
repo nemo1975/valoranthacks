@@ -100,6 +100,31 @@ export const siteConfig = {
 	heroImage: brand.heroImage,
 } as const;
 
+/** Geo Google should associate with this store — Americas first, then worldwide. */
+export const areaServedPlaces = [
+	{ '@type': 'Place', name: 'Americas' },
+	{ '@type': 'Country', name: 'United States' },
+	{ '@type': 'Country', name: 'Canada' },
+	{ '@type': 'Country', name: 'Mexico' },
+	{ '@type': 'Country', name: 'Brazil' },
+	{ '@type': 'Country', name: 'Argentina' },
+	{ '@type': 'Country', name: 'Colombia' },
+	{ '@type': 'Country', name: 'Chile' },
+	{ '@type': 'Place', name: 'Latin America' },
+	{ '@type': 'Place', name: 'Worldwide' },
+] as const;
+
+/** ISO countries we sell to — used on Offer / AggregateOffer. */
+export const offerEligibleRegions = [
+	{ '@type': 'Country', name: 'United States' },
+	{ '@type': 'Country', name: 'Canada' },
+	{ '@type': 'Country', name: 'Mexico' },
+	{ '@type': 'Country', name: 'Brazil' },
+	{ '@type': 'Country', name: 'Argentina' },
+	{ '@type': 'Country', name: 'Colombia' },
+	{ '@type': 'Country', name: 'Chile' },
+] as const;
+
 /** Prefer brand.keywords — kept for Layout meta keywords. */
 export const seoKeywords = brand.keywords.list;
 
@@ -124,21 +149,21 @@ export const productInfo = {
 	heroLede: fillBrandTokens(brandCopy.heroLede),
 	features: {
 		esp: [
-			'PMC and Scav ESP / wallhack',
-			'Player gear and threat cues',
-			'Loot and extract markers',
+			'Agent and enemy ESP / wallhack',
+			'Health and ability cues',
+			'Spike and site markers',
 			'Distance readouts',
 			'Toggleable ESP categories',
-			'Corpse and container highlights',
+			'Ability and spike highlights',
 		],
 		aimbot: [
 			'Soft aim and aimbot controls',
 			'Smoothness and FOV settings',
 			'Bone priority',
-			'Hotkeys mid-raid',
+			'Hotkeys mid-round',
 			'Per-weapon profiles',
 		],
-		radar: ['2D radar overlay', 'Adjustable range', 'Works in PMC raids and Scav runs'],
+		radar: ['2D radar overlay', 'Adjustable range', 'Works in Competitive, Unrated, and Deathmatch'],
 		general: [
 			fillBrandTokens('{antiCheat} maintenance after patches'),
 			'Digital delivery after checkout',

@@ -6,40 +6,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "patch-notes-breakdown",
 		imageKey: "squadFight",
 		published: "2026-07-29",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Patch Notes",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-patch-notes-guide",
-		title: "How to Read Escape from Tarkov Patch Notes",
-		metaDescription: "Learn how Escape from Tarkov patch notes change PMC loadouts, ammo economy, and maps. What to do after BattlEye and wipe updates in 2026.",
-		h1: "How to Read Escape from Tarkov Patch Notes Without Guessing",
-		intro: "When Battlestate Games drops a patch, most players skim the headline and queue anyway. That is how you walk into Customs with the wrong ammo and a gun that just lost its armor pen. Here is a calmer way to read Escape from Tarkov patch notes so your next raid still makes sense.",
-		keywords: ["escape from tarkov patch notes","tarkov wipe update","battleye patch","pmc loadout","tarkov intel"],
-		imageAlt: "Player reviewing Escape from Tarkov patch notes before a PMC raid",
+		slug: "valorant-patch-notes-guide",
+		title: "How to Read Valorant Patch Notes",
+		metaDescription: "Learn how Valorant patch notes change agents, guns, and maps. What to do after Vanguard and episode updates in 2026.",
+		h1: "How to Read Valorant Patch Notes Without Guessing",
+		intro: "When Riot Games drops a patch, most players skim the headline and queue anyway. That is how you walk into Bind with the wrong buy and a gun that just got nerfed. Here is a calmer way to read Valorant patch notes so your next Competitive match still makes sense.",
+		keywords: ["valorant patch notes","valorant episode update","vanguard patch","valorant agents","valorant hacks"],
+		imageAlt: "Player reviewing Valorant patch notes before a Competitive match",
 		sections: [
 			{
-				h2: "What actually matters in a Tarkov patch?",
+				h2: "What actually matters in a Valorant patch?",
 				paragraphs: [
-					"Official notes live on <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Treat that page as the source of truth — Discord rumors and streamer hot takes come second. Ask three plain questions for every bullet: Does this change how I kill armored PMCs? Does this change what loot is worth looting? Does this change which extract or map I should run tonight?",
-					"Ammo tables, armor classes, boss spawn rates, and trader unlocks move the real economy. A small recoil tweak on an M4 looks boring in a video title, but it quietly reshapes mid-range fights on Woods and Interchange. Cosmetic lines and UI polish almost never decide whether you survive dorms.",
-					"If you also run third-party tools, separate game balance from anti-cheat maintenance. After a <a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a> or client update, check our <a href=\"/updates/\">Tarkov Cheats status page</a> before you blame your own aim.",
+					"Official notes live on <a href=\"https://playvalorant.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant</a>. Treat that page as the source of truth — Discord rumors and streamer hot takes come second. Ask three plain questions for every bullet: Does this change how I take a site? Does this change what I buy? Does this change which map I should play tonight?",
+					"Agent kits, rifle recoil, ability costs, and map tweaks move the real meta. A small recoil tweak on the Vandal looks boring in a video title, but it quietly reshapes mid-range fights on Breeze and Icebox. Cosmetic lines and UI polish almost never decide whether you hold Haven.",
+					"If you also run cheat tools, separate game balance from anti-cheat maintenance. After a <a href=\"https://www.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Vanguard</a> or client update, check our <a href=\"/updates/\">Valorant Hacks status page</a> before you blame your own aim.",
 				],
 			},
 			{
-				h2: "Buffs, nerfs, and removed items — a simple framework",
+				h2: "Buffs, nerfs, and cut abilities — a simple framework",
 				paragraphs: [
-					"When an item is removed from raid loot pools, delete it from your mental shopping list the same day. Heavy nerfs demote a weapon from “default kit” to “situational.” Light nerfs are fine if you already shoot cleaner than most lobbies. Buffs deserve a short test block — ten focused raids — before you rebuild your entire stash around them.",
-					"Armor and ammunition changes usually matter more than a single gun’s recoil number. If a popular round loses penetration against class-five plates, your Customs push into three-stacks suddenly needs a different mag. Pair this reading habit with our <a href=\"/blog/tarkov-weapon-tier-list/\">Tarkov weapon tier list</a> so you are not chasing streamer kits that ignore your budget.",
+					"When an agent ability is gutted, stop defaulting that setup the same day. Heavy nerfs demote a weapon from “default buy” to “situational.” Light nerfs are fine if you already shoot cleaner than most lobbies. Buffs deserve a short test block — ten focused Deathmatch games — before you rebuild your entire buy plan around them.",
+					"Armor and credit changes usually matter more than a single gun’s recoil number. If a popular rifle loses damage against heavy armor, your Bind push into three defenders suddenly needs a different buy. Pair this reading habit with our <a href=\"/blog/valorant-weapon-tier-list/\">Valorant weapon tier list</a> so you are not chasing streamer kits that ignore your credits.",
 				],
 			},
 			{
 				h2: "How patches reshuffle loadouts and map plans",
 				paragraphs: [
-					"When mid-range rifles feel strong, prioritize optics and ammo that win 40–70 meter peeks. When healing items get tighter, play more conservatively near extracts and avoid ego third-parties. When a map POI shifts — new locked rooms, moved spawns, boss path changes — rewrite your first three minutes on that map before you farm it for quests.",
-					"Keep cosmetic shop chatter out of patch-day focus. Skin talk is fun; time-to-kill and extract camping patterns are what get you killed. For aggressive Scav timing after a meta shift, see our <a href=\"/blog/tarkov-scav-run-aggressive-strategies/\">Scav run strategies</a>.",
-					"On big mornings, confirm <a href=\"https://www.escapefromtarkov.com/support/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov Support</a> looks healthy before you assume your client is broken. Then run a short checklist: note removed items, update your stash “buy list,” play five intentional raids, and only then lock a new main kit.",
+					"When mid-range rifles feel strong, prioritize Vandal and Phantom peeks through site doors. When the Operator gets expensive, eco with Spectre more often and avoid ego long-range fights. When a map changes — new cover, moved spawns, ability lineups that break — rewrite your first three rounds on that map before you treat it as default.",
+					"Keep cosmetic shop chatter out of patch-day focus. Skin talk is fun; time-to-kill and rotation timing are what get you killed. For aggressive Deathmatch timing after a meta shift, see our <a href=\"/blog/valorant-deathmatch-aggressive-strategies/\">Deathmatch strategies</a>.",
+					"On big mornings, confirm <a href=\"https://support-valorant.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant Support</a> looks healthy before you assume your client is broken. Then run a short checklist: note nerfed agents, update your buy list, play five intentional Competitive games, and only then lock a new main kit.",
 				],
 			}
 		],
@@ -47,41 +47,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-skin-leaks",
+		id: "valorant-skin-leaks",
 		imageKey: "headerArt",
 		published: "2026-07-27",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Cosmetics",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-skin-leaks-guide",
-		title: "Tarkov Cosmetics & Skin Leaks: What Is Worth Buying",
-		metaDescription: "Sensible advice on Escape from Tarkov cosmetics and skin leaks — what to buy on the Flea Market, what to skip, and how looks affect raid readability.",
-		h1: "Tarkov Cosmetics and Skin Leaks: Buy Smart, Not Impulsive",
-		intro: "Leaks make every wipe feel like a fashion drop. Before you dump roubles into another loud outfit, decide whether the skin helps you play Escape from Tarkov — or just looks cool in a screenshot.",
-		keywords: ["tarkov skins","tarkov cosmetics","flea market skins","escape from tarkov apparel","tarkov intel"],
-		imageAlt: "Escape from Tarkov character cosmetics and gear appearance options",
+		slug: "valorant-skin-leaks-guide",
+		title: "Valorant Cosmetics & Skin Leaks: What Is Worth Buying",
+		metaDescription: "Sensible advice on Valorant cosmetics and skin leaks — what to buy, what to skip, and how looks affect fight readability.",
+		h1: "Valorant Cosmetics and Skin Leaks: Buy Smart, Not Impulsive",
+		intro: "Leaks make every episode feel like a fashion drop. Before you dump VP into another loud skin, decide whether it helps you play Valorant — or just looks cool in a screenshot.",
+		keywords: ["valorant skins","valorant cosmetics","valorant weapon skins","valorant battle pass","valorant intel"],
+		imageAlt: "Valorant character cosmetics and gear appearance options",
 		sections: [
 			{
 				h2: "Why most impulse cosmetic buys feel bad after a week",
 				paragraphs: [
-					"Shop rotations and official apparel come from <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Leaks are entertainment, not a shopping list. Many players spend hard-earned flea money the night before a wipe, then realize they still need meds, ammo, and a backup kit.",
-					"Controversial but useful: most cosmetics do not raise your survival rate. Some loud patterns even make you easier to spot in bushes on Woods or in dark Interchange hallways. Pros often prefer quieter silhouettes so enemy outlines stay readable in chaotic peeks.",
+					"Shop rotations and official bundles come from <a href=\"https://playvalorant.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant</a>. Leaks are entertainment, not a shopping list. Many players spend hard-earned VP the night a bundle drops, then realize they still wanted a Vandal skin they already use every round.",
+					"Controversial but useful: most cosmetics do not raise your win rate. Some loud patterns even make you easier to spot in Breeze grass or in dark Icebox hallways. Pros often prefer quieter silhouettes so enemy outlines stay readable in chaotic peeks.",
 				],
 			},
 			{
-				h2: "A simple worth-it checklist for Tarkov cosmetics",
+				h2: "A simple worth-it checklist for Valorant cosmetics",
 				paragraphs: [
-					"Buy if you will still wear it in ninety days and it stays readable in night raids. Pause if it overlaps three outfits you already own. Skip FOMO bundles packed with fillers you will never equip. Always keep a rouble floor for ammo and healing before fashion.",
-					"Do the math on bundles. Paying extra for two fillers you hate is worse than waiting for a single piece on the Flea Market. If a leak only hypes one jacket, wait for confirmation instead of panic-buying a full set.",
+					"Buy if you will still equip it in ninety days and it stays readable on Bind and Ascent. Pause if it overlaps three skins you already own. Skip FOMO bundles packed with fillers you will never equip. Always keep a VP floor for the one weapon you actually main.",
+					"Do the math on bundles. Paying extra for two fillers you hate is worse than waiting for a single piece in the store. If a leak only hypes one knife, wait for confirmation instead of panic-buying a full set.",
 				],
 			},
 			{
 				h2: "How to use leaks without getting played",
 				paragraphs: [
-					"Treat late-wipe leak waves as theme previews, not release dates. Decide a budget before something hits the store, not during the five-minute panic. A quiet daily habit works: open the shop for one minute, check your wishlist, then leave.",
-					"For competitive readability tips that actually affect fights, pair this with our <a href=\"/blog/tarkov-pro-settings-guide/\">pro settings guide</a>. Looking clean matters less than seeing the other PMC first.",
+					"Treat late-episode leak waves as theme previews, not release dates. Decide a budget before something hits the store, not during the five-minute panic. A quiet daily habit works: open the shop for one minute, check your wishlist, then leave.",
+					"For competitive readability tips that actually affect fights, pair this with our <a href=\"/blog/valorant-pro-settings-guide/\">pro settings guide</a>. Looking clean matters less than seeing the other agent first.",
 				],
 			}
 		],
@@ -89,42 +89,42 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-weapon-tier-list",
+		id: "valorant-weapon-tier-list",
 		imageKey: "aimbotCombat",
 		published: "2026-07-25",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Weapons",
 		featured: true,
 		translations: {
 		en: {
-		slug: "tarkov-weapon-tier-list",
-		title: "Tarkov Weapon Tier List: Best Guns for Raids",
-		metaDescription: "A practical Escape from Tarkov weapon tier list for PMC and Scav raids — ARs, SMGs, bolt-actions, ammo, and when each gun actually wins fights.",
-		h1: "Tarkov Weapon Tier List: What Wins Raids in 2026",
-		intro: "Creator tier lists love flashy guns. Escape from Tarkov rewards expected value: armor penetration, recoil you can control, and a kit you can rebuild after you die. Here is how to rank weapons for real raids — not highlight reels.",
-		keywords: ["tarkov weapon tier list","best tarkov guns","tarkov meta weapons","m4a1 tarkov","tarkov intel"],
-		imageAlt: "Escape from Tarkov weapons laid out for a PMC loadout comparison",
+		slug: "valorant-weapon-tier-list",
+		title: "Valorant Weapon Tier List: Vandal, Phantom, Operator",
+		metaDescription: "A practical Valorant weapon tier list for Competitive — Vandal, Phantom, Operator, Spectre, and when each gun actually wins fights.",
+		h1: "Valorant Weapon Tier List: What Wins Fights in 2026",
+		intro: "Creator tier lists love flashy guns. Valorant rewards expected value: a rifle you can control, a buy you can repeat, and the right pick for the round. Here is how to rank weapons for real matches — not highlight reels.",
+		keywords: ["valorant weapon tier list","best valorant guns","vandal vs phantom","valorant operator","valorant intel"],
+		imageAlt: "Valorant weapons laid out for a Competitive loadout comparison",
 		sections: [
 			{
-				h2: "How should you define S-tier in Tarkov?",
+				h2: "How should you define S-tier in Valorant?",
 				paragraphs: [
-					"S-tier means the best expected value across a hundred PMC fights on maps like Customs, Woods, and Interchange — not the gun that looks strongest in a controlled offline range. Mid-range rifles win many of the fights that actually decide raids: forty to seventy meters through doorways, parking lots, and tree lines.",
-					"Shotguns still own tight interiors. Bolt-actions still punish long peeks on Shoreline and Lighthouse. Everything between those extremes is usually assault-rifle country, which is why a well-built M4A1 or similar 5.56 platform stays relevant wipe after wipe when ammo and mods are available.",
-					"Always re-check live values after patches on <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. The hierarchy logic stays useful even when numbers nudge.",
+					"S-tier means the best expected value across a hundred Competitive fights on maps like Bind, Breeze, and Icebox — not the gun that looks strongest in the Range. Mid-range rifles win many of the fights that actually decide rounds: site doors, mid control, and retake peeks.",
+					"Shotguns still own tight interiors on Split and Haven. The Operator still punishes long peeks on Breeze and Icebox. Everything between those extremes is usually rifle country, which is why a well-sprayed Vandal or Phantom stays relevant episode after episode when you can afford a full buy.",
+					"Always re-check live values after patches on <a href=\"https://playvalorant.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant</a>. The hierarchy logic stays useful even when numbers nudge.",
 				],
 			},
 			{
-				h2: "Ammo, TTK, and peek discipline matter more than brand names",
+				h2: "Credits, TTK, and peek discipline matter more than brand names",
 				paragraphs: [
-					"Time-to-kill in Tarkov is really time-to-pen. A soft gun with the right rounds beats a loud meta rifle feeding trash ammo into class-five armor. Learn which rounds you can afford this wipe, then pick a platform that controls recoil at your skill level.",
-					"First-shot accuracy decides many peeks. A clean cadence — peek, fire a short burst, jiggle back, re-peek — beats standing still for ego sprays. Pair this mid-range plan with loot discipline from our <a href=\"/blog/tarkov-loot-routes-guide/\">loot routes guide</a> so you actually spawn with the ammo you planned to use.",
+					"Time-to-kill in Valorant is really first-shot discipline. A Sheriff with the right peek beats a loud Operator spray you cannot pay for again. Learn which buys you can afford this round, then pick a gun that controls recoil at your skill level.",
+					"First-shot accuracy decides many peeks. A clean cadence — peek, fire a short burst, jiggle back, re-peek — beats standing still for ego sprays. Pair this mid-range plan with buy discipline from our <a href=\"/blog/valorant-buy-rounds-guide/\">site takes and buy-round guide</a> so you actually spawn with the credits you planned to use.",
 				],
 			},
 			{
 				h2: "Loadout pairings and common mistakes",
 				paragraphs: [
-					"A durable kit is usually a reliable mid rifle, a close-range option for dorms or Factory, enough meds, and an armor class you can replace after deaths. In Scav runs, that same spine supports the aggression patterns in our <a href=\"/blog/tarkov-scav-run-aggressive-strategies/\">Scav strategies article</a>.",
-					"Common mistakes: full-spraying from eighty meters, re-peeking the same pixel, swapping to an SMG at forty meters out of habit, and never practicing controlled bursts offline. If you also use aim-assist tooling, lock sensitivity and fundamentals first, then review <a href=\"/tarkov-aimbot/\">Tarkov aimbot settings</a>.",
+					"A durable buy is usually a Vandal or Phantom, a close-range Spectre for Haven or Split eco rounds, enough armor, and abilities you can replace after deaths. In Deathmatch games, that same spine supports the aggression patterns in our <a href=\"/blog/valorant-deathmatch-aggressive-strategies/\">Deathmatch strategies article</a>.",
+					"Common mistakes: full-spraying from long range, re-peeking the same pixel, swapping to a Spectre at forty meters out of habit, and never practicing controlled bursts in the Range. If you also use aim-assist tooling, lock sensitivity and fundamentals first, then review <a href=\"/valorant-aimbot/\">Valorant aimbot settings</a>.",
 				],
 			}
 		],
@@ -132,41 +132,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-scav-run-meta",
-		imageKey: "battleRoyaleCombat",
+		id: "valorant-deathmatch-meta",
+		imageKey: "aimbotCombat",
 		published: "2026-07-22",
-		updated: "2026-08-13",
-		category: "Scav Runs",
+		updated: "2026-08-28",
+		category: "Deathmatch",
 		featured: true,
 		translations: {
 		en: {
-		slug: "tarkov-scav-run-aggressive-strategies",
-		title: "Tarkov Scav Run Strategies That Actually Print Loot",
-		metaDescription: "Five aggressive but smart Escape from Tarkov Scav strategies — timings, extracts, third-parties, and how to leave raids with gear instead of empty pockets.",
-		h1: "Tarkov Scav Run Strategies: How to Leave With Gear",
-		intro: "Passive Scav players wait behind a bush while two PMC teams erase each other, then spray into the mess and die. Strong Scav runs manufacture a short advantage, grab what matters, and extract before the map collapses on you.",
-		keywords: ["tarkov scav run","scav strategies","escape from tarkov scav","tarkov extracts","tarkov esp"],
-		imageAlt: "Scav player moving toward extract with loot in Escape from Tarkov",
+		slug: "valorant-deathmatch-aggressive-strategies",
+		title: "Valorant Deathmatch Strategies That Actually Improve Aim",
+		metaDescription: "Five aggressive but smart Valorant Deathmatch strategies — timings, peeks, and how to use DM as aim practice before Competitive.",
+		h1: "Valorant Deathmatch Strategies: How to Warm Up Aim",
+		intro: "Passive Deathmatch players wait in a corner and spray into the mess. Strong Deathmatch games manufacture a short advantage, take clean fights, and leave with better aim for Competitive.",
+		keywords: ["valorant deathmatch","valorant aim practice","deathmatch warmup","valorant peeks","valorant esp"],
+		imageAlt: "Deathmatch player practicing aim on a Valorant map",
 		sections: [
 			{
-				h2: "Why so many Scav runs feel soft",
+				h2: "Why so many Deathmatch games feel soft",
 				paragraphs: [
-					"Scav kits are random, timers are limited, and player Scavs can turn on you. Waiting forever for a “perfect” third-party often means you arrive late to a wiped lobby with nothing left. Information tools like <a href=\"/tarkov-esp/\">Tarkov ESP</a> can help you see fights early — but you still need an exit plan.",
-					"Decide your extract before you swing. Take a clear damage window, grab high-value loot, then leave. The usual third-party clock in hot POIs is only a few seconds long once gunfire starts.",
+					"Deathmatch kits are random, timers are limited, and every spawn can turn on you. Waiting forever for a “perfect” duel often means you take late, messy fights and learn nothing. Information tools like <a href=\"/valorant-esp/\">Valorant ESP</a> can help you see players early — but you still need a peek plan.",
+					"Decide your angle before you swing. Take a clear damage window, reset, then take the next fight. The usual duel clock on hot sites is only a few seconds long once gunfire starts.",
 				],
 			},
 			{
 				h2: "Five aggressive habits that still work",
 				paragraphs: [
-					"Pre-aim common corners on Customs dorms and Interchange tech stores so you clear angles in under a second. Enter rooms with an exit path, not a panic turn. Fake one side of a doorway, then finish from the safer angle when their magazine is weak.",
-					"Stay close to hard cover while you move — never more than a short sprint from a wall or vehicle. Pressure late rotates near extracts when players are silhouetted and greedy. Mode rules evolve with <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> wipes; the geometry of first-shot advantage does not.",
+					"Pre-aim common corners on Bind, Haven, and Icebox so you clear angles in under a second. Enter rooms with an exit path, not a panic turn. Fake one side of a doorway, then finish from the safer angle when their magazine is weak.",
+					"Stay close to hard cover while you move — never more than a short sprint from a wall or box. Pressure late rotates near spike sites when players are silhouetted and greedy. Mode rules evolve with <a href=\"https://playvalorant.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant</a> patches; the geometry of first-shot advantage does not.",
 				],
 			},
 			{
-				h2: "Warmup checklist before you queue a Scav",
+				h2: "Warmup checklist before you queue a Deathmatch",
 				paragraphs: [
-					"Know your map’s main extracts, bring a simple med plan, and pick two POIs with cover ladders instead of open fields. Pair this article with <a href=\"/blog/tarkov-loot-routes-guide/\">loot routes</a>, <a href=\"/blog/tarkov-weapon-tier-list/\">weapon tiers</a>, and <a href=\"/blog/tarkov-warmup-maps-ranked/\">warmup routines</a>.",
-					"Try one session where you force early contact only when you have armor and a usable gun — then track whether you extracted before the third-party window closed.",
+					"Know your map’s main sites, bring a simple peek plan, and pick two areas with cover instead of open mid. Pair this article with <a href=\"/blog/valorant-buy-rounds-guide/\">buy-round habits</a>, <a href=\"/blog/valorant-weapon-tier-list/\">weapon tiers</a>, and <a href=\"/blog/valorant-warmup-maps-ranked/\">warmup routines</a>.",
+					"Try one session where you force early contact only when you have armor and a usable gun — then track whether your first shot landed before the spray started.",
 				],
 			}
 		],
@@ -174,41 +174,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-tournament-meta",
-		imageKey: "rebootFight",
+		id: "valorant-tournament-meta",
+		imageKey: "aimbotCombat",
 		published: "2026-07-20",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Competitive",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-tournament-meta-guide",
-		title: "What Competitive Tarkov Players Optimize For",
-		metaDescription: "What strong Escape from Tarkov competitors optimize — spawn plans, loadouts, mid-raid habits, and which tournament habits help normal PMC queues.",
-		h1: "What Competitive Tarkov Players Optimize For",
-		intro: "Tournament winners and high-level duos are not lucky spawn gods. They optimize expected value: safer loot paths, cleaner mid-raid habits, and fights they choose on purpose. Here is what translates into your normal Escape from Tarkov queues.",
-		keywords: ["tarkov competitive","tarkov tournament","tarkov meta","pmc habits","tarkov intel"],
-		imageAlt: "Competitive Escape from Tarkov players reviewing raid strategy",
+		slug: "valorant-tournament-meta-guide",
+		title: "What Competitive Valorant Players Optimize For",
+		metaDescription: "What strong Valorant competitors optimize — spawn plans, buy rounds, mid-round habits, and which tournament habits help normal Competitive queues.",
+		h1: "What Competitive Valorant Players Optimize For",
+		intro: "Tournament winners and high-level teams are not lucky. They optimize expected value: safer site takes, cleaner mid-round habits, and fights they choose on purpose. Here is what translates into your normal Valorant queues.",
+		keywords: ["valorant competitive","valorant tournament","valorant meta","valorant site takes","valorant intel"],
+		imageAlt: "Competitive Valorant players reviewing site-take strategy",
 		sections: [
 			{
 				h2: "Watch competitive VODs like a coach, not a fan",
 				paragraphs: [
-					"Start with schedules and film from <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> community events or trusted creators, then tag habits instead of memorizing a single POI name. Note the landing plan, first heal, first rotate, first voluntary fight, and the key late-raid decision.",
-					"Five clear timestamps beat a full passive watch. You are stealing decision patterns, not cosplaying someone else’s spawn.",
+					"Start with schedules and film from <a href=\"https://playvalorant.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant</a> community events or trusted creators, then tag habits instead of memorizing a single callout. Note the default plan, first rotate, first voluntary fight, and the key late-round decision.",
+					"Five clear timestamps beat a full passive watch. You are stealing decision patterns, not copying someone else’s lineup.",
 				],
 			},
 			{
-				h2: "Spawn EV and loadout patterns that keep showing up",
+				h2: "Default EV and loadout patterns that keep showing up",
 				paragraphs: [
-					"Score every spawn on contest rate, loot quality in the first few minutes, extract pain, exit paths, and split potential with teammates. Edge spawns with clean exits often beat “sexy” mid-map landmarks that look good on stream and then get third-partied.",
-					"Expect a reliable mid rifle, a close-range option, mobility or stamina management, and enough meds. High-tier loot is taken when free, not forced — matching the mindset in our <a href=\"/blog/tarkov-weapon-tier-list/\">weapon tier list</a>.",
+					"Score every default on contest rate, site quality in the first few rounds, rotation pain, exit paths, and split potential with teammates. Edge defaults with clean exits often beat “sexy” mid-map hits that look good on stream and then get collapsed on.",
+					"Expect a reliable rifle, a close-range option, utility you can repeat, and enough armor. High-tier buys are taken when free, not forced — matching the mindset in our <a href=\"/blog/valorant-weapon-tier-list/\">weapon tier list</a>.",
 				],
 			},
 			{
-				h2: "What actually translates to normal raids",
+				h2: "What actually translates to normal Competitive",
 				paragraphs: [
-					"Steal loot-timer discipline, a simple loadout spine, earlier rotates, and selective fights. Do not blindly mirror a trio drop when you solo queue. Winners rotate early enough to choose sides — the same idea shows up in our <a href=\"/blog/tarkov-scav-run-aggressive-strategies/\">Scav aggression guide</a>.",
-					"Try this: watch fifteen minutes of a strong VOD with five timestamps. Steal one mid-raid habit only. Run it for a six-raid PMC block before adding another.",
+					"Steal buy-timer discipline, a simple loadout spine, earlier rotates, and selective fights. Do not blindly mirror a five-stack execute when you solo queue. Winners rotate early enough to choose sides — the same idea shows up in our <a href=\"/blog/valorant-deathmatch-aggressive-strategies/\">Deathmatch aggression guide</a>.",
+					"Try this: watch fifteen minutes of a strong VOD with five timestamps. Steal one mid-round habit only. Run it for a six-game Competitive block before adding another.",
 				],
 			}
 		],
@@ -216,41 +216,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-loot-routes",
-		imageKey: "battleRoyaleIslandMap",
+		id: "valorant-buy-rounds",
+		imageKey: "playerEsp",
 		published: "2026-07-18",
-		updated: "2026-08-13",
-		category: "Loot Routes",
+		updated: "2026-08-28",
+		category: "Buy Rounds",
 		featured: true,
 		translations: {
 		en: {
-		slug: "tarkov-loot-routes-guide",
-		title: "Tarkov Loot Routes That Leave Spawn Ready to Fight",
-		metaDescription: "High-percentage Escape from Tarkov loot routes for Customs, Woods, and Interchange — how to leave spawn with guns, armor, and meds that win mid-raid fights.",
-		h1: "Tarkov Loot Routes: Leave Spawn Ready to Fight",
-		intro: "Winning in Escape from Tarkov starts before the first gunfight. Random looting gets you killed with a pistol and no meds. These route habits consistently convert a spawn into a kit you can actually fight with.",
-		keywords: ["tarkov loot routes","customs loot path","interchange loot","tarkov spawn guide","tarkov esp"],
-		imageAlt: "Loot route planning across an Escape from Tarkov map",
+		slug: "valorant-buy-rounds-guide",
+		title: "Valorant Site Takes and Buy-Round Habits That Win Fights",
+		metaDescription: "High-percentage Valorant buy-round habits for Bind, Breeze, and Icebox — credits, eco, and when to buy Operator vs Spectre.",
+		h1: "Valorant Buy Rounds: Leave Spawn Ready to Fight",
+		intro: "Winning in Valorant starts before the first gunfight. Random buys get you killed with a Sheriff and no armor. These habits convert credits into a kit you can actually fight with.",
+		keywords: ["valorant buy round","valorant eco","valorant credits","valorant site takes","valorant esp"],
+		imageAlt: "Buy-round planning across a Valorant map",
 		sections: [
 			{
-				h2: "Why early inventory is the real bottleneck",
+				h2: "Why early credits are the real bottleneck",
 				paragraphs: [
-					"Many early raid deaths happen because players loot like tourists. Strong players treat the first ninety seconds like a shopping list: usable gun, enough ammo, basic armor, and a heal. Drop spot matters less than sequence — a mediocre POI with discipline beats a stacked landmark with panic looting.",
-					"Secure a primary weapon and meds before hunting kills. Early ego chases are how hot-spawn players stay broke.",
+					"Many early-round deaths happen because players buy like tourists. Strong players treat the first round like a shopping list: usable gun, enough armor, and abilities that actually help the site take. Spawn side matters less than sequence — a mediocre eco with discipline beats a stacked full buy with panic spraying.",
+					"Secure a primary weapon and armor before hunting kills. Early ego peeks are how force-buy players stay broke.",
 				],
 			},
 			{
-				h2: "Three route archetypes that keep printing gear",
+				h2: "Three buy archetypes that keep printing rounds",
 				paragraphs: [
-					"Contested edge POI: land outer loot, snake inward, leave before late third parties. Uncontested chain: sacrifice early fights for a fuller kit by minute three. Mid-map surge: vacuum piles ninety to one hundred fifty seconds after hot spawns empty out.",
-					"Timing targets help: first gun quickly, clear a cluster, grab heals, then upgrade or leave. Slot priority is usually gun, ammo, armor, meds, then flex loot. POI names shift with <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> wipes — keep the geometry, not just the landmark brand.",
+					"Full buy: Vandal or Phantom plus heavy armor when the team can afford it. Eco: Sheriff or Ghost, light or no armor, save for the next round. Force: Spectre plus light armor when you need a chance this round, not a highlight Operator you cannot replace.",
+					"Timing targets help: first gun quickly, clear a default, plant or retake, then upgrade or save. Slot priority is usually rifle, armor, abilities, then flex buys like Operator or Marshal. Credit math shifts with <a href=\"https://playvalorant.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant</a> patches — keep the geometry, not just last episode’s default.",
 				],
 			},
 			{
 				h2: "Convert a strong spawn into a win",
 				paragraphs: [
-					"Pair these routes with <a href=\"/blog/tarkov-scav-run-aggressive-strategies/\">Scav aggression</a> and <a href=\"/blog/tarkov-weapon-tier-list/\">weapon tiers</a>. Leave spawn rich so mid-raid becomes a skill check instead of a scavenger panic.",
-					"If you practice with loot markers, read <a href=\"/tarkov-esp/\">Tarkov ESP</a> for category toggles — then still run the timer so your habits stay sharp without overlays.",
+					"Pair these habits with <a href=\"/blog/valorant-deathmatch-aggressive-strategies/\">Deathmatch aggression</a> and <a href=\"/blog/valorant-weapon-tier-list/\">weapon tiers</a>. Leave spawn with a real buy so mid-round becomes a skill check instead of a panic spray.",
+					"If you practice with spike markers, read <a href=\"/valorant-esp/\">Valorant ESP</a> for category toggles — then still run the timer so your habits stay sharp without overlays.",
 				],
 			}
 		],
@@ -258,41 +258,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-pro-settings",
+		id: "valorant-pro-settings",
 		imageKey: "cheatsPackage",
 		published: "2026-07-12",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Settings",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-pro-settings-guide",
-		title: "Tarkov Pro Settings That Actually Help You See Enemies",
-		metaDescription: "Practical Escape from Tarkov settings used by strong players — visibility, audio cues, sensitivity, and what to copy vs ignore from pro configs.",
-		h1: "Tarkov Settings Guide: See More, Panic Less",
-		intro: "Copying a champion’s entire config will not make you one. But a few Escape from Tarkov settings reliably improve visibility, audio reads, and aim consistency. Here is what is worth stealing.",
-		keywords: ["tarkov settings","tarkov sensitivity","tarkov visibility","tarkov audio settings","tarkov intel"],
-		imageAlt: "Escape from Tarkov graphics and control settings menu",
+		slug: "valorant-pro-settings-guide",
+		title: "Valorant Pro Settings That Actually Help You See Enemies",
+		metaDescription: "Practical Valorant settings used by strong players — visibility, audio cues, sensitivity, and what to copy vs ignore from pro configs.",
+		h1: "Valorant Settings Guide: See More, Panic Less",
+		intro: "Copying a champion’s entire config will not make you one. But a few Valorant settings reliably improve visibility, audio reads, and aim consistency. Here is what is worth stealing.",
+		keywords: ["valorant settings","valorant sensitivity","valorant visibility","valorant audio settings","valorant intel"],
+		imageAlt: "Valorant graphics and control settings menu",
 		sections: [
 			{
 				h2: "Visibility and performance before fancy numbers",
 				paragraphs: [
-					"If your frame rate collapses in Streets of Tarkov or Interchange interiors, no sensitivity tip will save you. Prioritize a stable FPS and readable shadows over maximum eye candy. Many strong players lower clutter so PMC silhouettes pop sooner in tree lines and warehouse lighting.",
-					"Test changes in offline mode or a quiet Scav before locking them for serious PMC raids. Your eyes adapt in a few sessions — give settings that long before declaring them useless.",
+					"If your frame rate collapses in Sunset or Icebox interiors, no sensitivity tip will save you. Prioritize a stable FPS and readable shadows over maximum eye candy. Many strong players lower clutter so agent silhouettes pop sooner in Ascent mid and Haven hallways.",
+					"Test changes in the Range or a quiet Deathmatch before locking them for serious Competitive matches. Your eyes adapt in a few sessions — give settings that long before declaring them useless.",
 				],
 			},
 			{
 				h2: "Sensitivity, ADS, and muscle memory",
 				paragraphs: [
-					"Pick one hip-fire and ADS relationship and stick with it for at least a week. Constantly rewriting sens after every death trains nothing. Warm up with the routine in our <a href=\"/blog/tarkov-warmup-maps-ranked/\">warmup guide</a> so your hands match the new numbers.",
-					"If you later add soft aim tooling, match the in-game sens first, then tune FOV in the <a href=\"/tarkov-aimbot/\">aimbot guide</a>. Tools on top of a chaotic sens feel robotic and obvious.",
+					"Pick one hip-fire and ADS relationship and stick with it for at least a week. Constantly rewriting sens after every death trains nothing. Warm up with the routine in our <a href=\"/blog/valorant-warmup-maps-ranked/\">warmup guide</a> so your hands match the new numbers.",
+					"If you later add soft aim tooling, match the in-game sens first, then tune FOV in the <a href=\"/valorant-aimbot/\">aimbot guide</a>. Tools on top of a chaotic sens feel robotic and obvious.",
 				],
 			},
 			{
-				h2: "Audio cues that win extracts",
+				h2: "Audio cues that win rounds",
 				paragraphs: [
-					"Footsteps, magazine reloads, and extract buzzing often matter more than a tiny graphics slider. Use headphones, keep voice chat from drowning game audio, and learn the sound difference between a scav AI shuffle and a player PMC push.",
-					"Settings are leverage, not a cheat code. Pair them with map knowledge from our <a href=\"/blog/tarkov-loot-routes-guide/\">loot routes</a> article so you know where those sounds are coming from.",
+					"Footsteps, magazine reloads, and spike beeps often matter more than a tiny graphics slider. Use headphones, keep voice chat from drowning game audio, and learn the sound difference between an ability cast and a player push.",
+					"Settings are leverage, not a cheat code. Pair them with map knowledge from our <a href=\"/blog/valorant-buy-rounds-guide/\">buy-round habits</a> article so you know where those sounds are coming from.",
 				],
 			}
 		],
@@ -300,41 +300,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-warmup-maps",
+		id: "valorant-warmup-maps",
 		imageKey: "playerEsp",
 		published: "2026-07-10",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Warmup",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-warmup-maps-ranked",
-		title: "Tarkov Warmup Routine Before Serious PMC Raids",
-		metaDescription: "A short Escape from Tarkov warmup routine before PMC raids — aim, peeks, audio focus, and what to practice offline so your first fight is not your warmup.",
-		h1: "Tarkov Warmup Routine Before You Queue PMC",
-		intro: "Queuing cold into Factory or dorms is how you donate a kit. A short Escape from Tarkov warmup — even ten to fifteen minutes — makes your first real fight feel like your third.",
-		keywords: ["tarkov warmup","tarkov aim practice","pmc warmup routine","tarkov offline practice","tarkov intel"],
-		imageAlt: "Player warming up aim before an Escape from Tarkov PMC raid",
+		slug: "valorant-warmup-maps-ranked",
+		title: "Valorant Warmup Routine Before Competitive Matches",
+		metaDescription: "A short Valorant warmup routine before Competitive matches — aim, peeks, audio focus, and what to practice in the Range so your first fight is not your warmup.",
+		h1: "Valorant Warmup Routine Before You Queue Competitive",
+		intro: "Queuing cold into Split or Haven is how you throw the first round. A short Valorant warmup — even ten to fifteen minutes — makes your first real fight feel like your third.",
+		keywords: ["valorant warmup","valorant aim practice","competitive warmup","valorant range practice","valorant intel"],
+		imageAlt: "Player warming up aim before a Valorant Competitive match",
 		sections: [
 			{
-				h2: "Why your first raid should not be the warmup",
+				h2: "Why your first match should not be the warmup",
 				paragraphs: [
 					"Most players boot the game, slap on a kit, and die to the first clean peeker. Hands are cold, audio is not dialed, and map timing feels off. Treat warmup as part of the session, not optional fluff.",
-					"Offline practice, shooting range habits, and a couple of low-stakes Scav runs exist so your expensive PMC kit is not the experiment.",
+					"Range practice, shooting-range habits, and a couple of low-stakes Deathmatch games exist so your Competitive match is not the experiment.",
 				],
 			},
 			{
 				h2: "A simple 15-minute routine that scales",
 				paragraphs: [
-					"Minutes 1–5: tracking and short bursts on a range or offline bots. Minutes 6–10: peek practice on common angles — jiggle, counter-strafe, pre-aim head height. Minutes 11–15: one focused Scav or offline fight block where you only work one habit, like holding an extract or clearing a room.",
-					"Keep the routine identical for a week so improvements are measurable. Rotate maps later — Customs one day, Woods the next — after the habit sticks.",
+					"Minutes 1–5: tracking and short bursts on the Range. Minutes 6–10: peek practice on common angles — jiggle, counter-strafe, pre-aim head height. Minutes 11–15: one focused Deathmatch or Range fight block where you only work one habit, like holding a site angle or clearing a room.",
+					"Keep the routine identical for a week so improvements are measurable. Rotate maps later — Bind one day, Breeze the next — after the habit sticks.",
 				],
 			},
 			{
 				h2: "What to do right before you ready up",
 				paragraphs: [
-					"Check stash meds and ammo, confirm your map extracts, and skim <a href=\"/updates/\">cheat status</a> if you use overlays after a patch. Pair warmup with <a href=\"/blog/tarkov-pro-settings-guide/\">settings</a> and <a href=\"/blog/tarkov-weapon-tier-list/\">weapon tiers</a> so you are not reinventing the kit every night.",
-					"If the first two PMC deaths feel mechanical, stop stacking kits and repeat five minutes of peek practice. Ego queueing while tilted is not a strategy.",
+					"Check your buy plan and armor, confirm your map defaults, and skim <a href=\"/updates/\">cheat status</a> if you use overlays after a patch. Pair warmup with <a href=\"/blog/valorant-pro-settings-guide/\">settings</a> and <a href=\"/blog/valorant-weapon-tier-list/\">weapon tiers</a> so you are not reinventing the kit every night.",
+					"If the first two Competitive deaths feel mechanical, stop stacking queues and repeat five minutes of peek practice. Ego queueing while tilted is not a strategy.",
 				],
 			}
 		],
@@ -342,48 +342,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-cheats-complete-guide",
+		id: "valorant-hacks-complete-guide",
 		imageKey: "espWallhack",
 		published: "2026-07-30",
-		updated: "2026-08-13",
-		category: "Cheats Guide",
+		updated: "2026-08-28",
+		category: "Valorant Hacks",
 		featured: true,
 		translations: {
 		en: {
-		slug: "tarkov-cheats-complete-guide-2026",
-		title: "Tarkov Cheats 2026: Complete Undetected Guide",
-		metaDescription: "A clear 2026 guide to tarkov cheats — what ESP, soft aim, and radar actually do in Escape from Tarkov, how BattlEye maintenance works, and how to buy safely.",
-		h1: "Tarkov Cheats in 2026: What They Are and How to Use Them Carefully",
-		intro: "People search “tarkov cheats” for a simple reason: Escape from Tarkov is information-heavy, punishing, and full of extract campers. This guide explains what modern undetected packages actually include, how BattlEye maintenance works, and how to decide whether a tool fits your play style.",
-		keywords: ["tarkov cheats","undetected tarkov cheats","tarkov esp","tarkov aimbot","battleye"],
-		imageAlt: "Overview of Tarkov Cheats ESP soft aim and radar tools for 2026",
+		slug: "valorant-hacks-complete-guide-2026",
+		title: "Valorant Hacks 2026: Complete Undetected Guide",
+		metaDescription: "A clear 2026 guide to valorant hacks — what ESP, soft aim, and radar actually do in Valorant, how Vanguard maintenance works, and how to buy safely.",
+		h1: "Valorant Hacks in 2026: What They Are and How to Use Them Carefully",
+		intro: "People search “valorant hacks” for a simple reason: Valorant is information-heavy and punishing. This guide explains what modern undetected packages actually include, how Vanguard maintenance works, and how to decide whether a tool fits your play style.",
+		keywords: ["valorant hacks","undetected valorant hacks","valorant esp","valorant aimbot","vanguard"],
+		imageAlt: "Overview of Valorant Hacks ESP soft aim and radar tools for 2026",
 		sections: [
 			{
-				h2: "What do people mean when they say tarkov cheats?",
+				h2: "What do people mean when they say valorant hacks?",
 				paragraphs: [
-					"In plain language, tarkov cheats are third-party tools that add information or aim assistance on top of the Escape from Tarkov client. The common stack is ESP wallhack for players and loot, a 2D radar for threats outside your view, and configurable soft aim for firefights. One license should cover that loop instead of forcing you to juggle separate downloads.",
-					"Searchers also say “escape from tarkov cheats,” “eft hacks,” or “tarkov wallhack.” Those phrases usually point at the same intent: survive raids with better reads. Start at our <a href=\"/tarkov-cheats/\">tarkov cheats pillar</a> if you want the product overview without the long essay.",
+					"In plain language, valorant hacks are cheat tools that add information or aim assistance on top of the Valorant client. The common stack is ESP wallhack for players and spike, a 2D radar for threats outside your view, and configurable soft aim for firefights. One license should cover that loop instead of forcing you to juggle separate downloads.",
+					"Searchers also say “valo hacks,” “valorant cheats,” or “valorant wallhack.” Those phrases usually point at the same intent: win rounds with better reads. Start at our <a href=\"/valorant-hacks/\">valorant hacks pillar</a> if you want the product overview without the long essay.",
 				],
 			},
 			{
 				h2: "ESP, soft aim, and radar — what each tool is for",
 				paragraphs: [
-					"ESP answers “who is near me and what is worth looting?” Soft aim answers “can I finish the fight once I choose it?” Radar answers “is someone flanking while I heal?” Used together, they cover information and combat. Used badly, they create noisy overlays and obvious aim corrections.",
-					"Deep dives live on <a href=\"/tarkov-esp/\">ESP</a>, <a href=\"/tarkov-aimbot/\">aimbot</a>, <a href=\"/tarkov-esp/\">wallhack</a>, and <a href=\"/tarkov-radar-hack/\">radar</a>. Read those before you buy if you only need one job done well.",
+					"ESP answers “who is near me and where is the spike?” Soft aim answers “can I finish the fight once I choose it?” Radar answers “is someone flanking while I plant?” Used together, they cover information and combat. Used badly, they create noisy overlays and obvious aim corrections.",
+					"Deep dives live on <a href=\"/valorant-esp/\">ESP</a>, <a href=\"/valorant-aimbot/\">aimbot</a>, <a href=\"/valorant-wallhack/\">wallhack</a>, and <a href=\"/valorant-radar-hack/\">radar</a>. Read those before you buy if you only need one job done well.",
 				],
 			},
 			{
-				h2: "BattlEye, “undetected,” and honest expectations",
+				h2: "Vanguard, “undetected,” and honest expectations",
 				paragraphs: [
-					"<a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a> protects Escape from Tarkov. No seller can promise permanent undetected status. What a serious vendor can offer is maintenance: rebuilds after patches, a public status note, and clear setup steps. That workflow is documented on <a href=\"/tarkov-cheats/\">undetected tarkov cheats</a> and <a href=\"/updates/\">BattlEye maintenance</a>.",
+					"<a href=\"https://www.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Vanguard</a> protects Valorant. No seller can promise permanent undetected status. What a serious vendor can offer is maintenance: rebuilds after patches, a public status note, and clear setup steps. That workflow is documented on <a href=\"/undetected-valorant-hacks/\">undetected valorant hacks</a> and <a href=\"/vanguard-bypass/\">Vanguard maintenance</a>.",
 					"Before every patch-day queue, read <a href=\"/updates/\">Updates</a>. If status is quiet, wait. Responsible settings matter as much as the binary itself.",
 				],
 			},
 			{
 				h2: "How to buy and set up without wasting a night",
 				paragraphs: [
-					"Compare monthly and lifetime on <a href=\"/pricing/\">Pricing</a>, then follow <a href=\"/setup/\">Setup</a> after delivery. Keep your order ID ready for <a href=\"/support/\">Support</a>. If you are still shopping, the <a href=\"/blog/escape-from-tarkov-cheats-buyers-guide/\">buyers guide</a> lists the checklist we wish every shopper used.",
-					"Tarkov Cheats is built for Windows PC PMC and Scav play. It will not replace map knowledge — it amplifies the reads you already practice in raids.",
+					"Compare monthly and lifetime on <a href=\"/pricing/\">Pricing</a>, then follow <a href=\"/setup/\">Setup</a> after delivery. Keep your order ID ready for <a href=\"/support/\">Support</a>. If you are still shopping, the <a href=\"/blog/valorant-hacks-buyers-guide/\">buyers guide</a> lists the checklist we wish every shopper used.",
+					"Valorant Hacks is built for Windows PC Competitive and Unrated play. It will not replace map knowledge — it amplifies the reads you already practice in matches.",
 				],
 			}
 		],
@@ -391,34 +391,34 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "escape-from-tarkov-cheats-buyers-guide",
+		id: "valorant-hacks-buyers-guide",
 		imageKey: "cheatsPackage",
 		published: "2026-07-28",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Buyers Guide",
 		featured: true,
 		translations: {
 		en: {
-		slug: "escape-from-tarkov-cheats-buyers-guide",
-		title: "Escape from Tarkov Cheats Buyers Guide",
-		metaDescription: "What to check before you buy escape from tarkov cheats — status pages, ESP features, soft aim, refunds, pricing, and red flags in 2026.",
-		h1: "Escape from Tarkov Cheats: What to Check Before You Buy",
-		intro: "Buying escape from tarkov cheats is noisy. Every storefront promises “undetected,” instant delivery, and god mode. This buyers guide slows you down with a practical checklist so you spend money on maintenance and clarity — not banners.",
-		keywords: ["escape from tarkov cheats","tarkov cheats buyers guide","buy tarkov cheats","undetected eft cheats","tarkov pricing"],
-		imageAlt: "Checklist for buying Escape from Tarkov cheats safely",
+		slug: "valorant-hacks-buyers-guide",
+		title: "Valorant Hacks Buyers Guide",
+		metaDescription: "What to check before you buy valorant hacks — status pages, ESP features, soft aim, refunds, pricing, and red flags in 2026.",
+		h1: "Valorant Hacks: What to Check Before You Buy",
+		intro: "Buying valorant hacks is noisy. Every storefront promises “undetected,” instant delivery, and god mode. This buyers guide slows you down with a practical checklist so you spend money on maintenance and clarity — not banners.",
+		keywords: ["valorant hacks buyers guide","buy valorant hacks","undetected valorant hacks","valorant cheats","valorant pricing"],
+		imageAlt: "Checklist for buying Valorant Hacks safely",
 		sections: [
 			{
 				h2: "Start with status, not screenshots",
 				paragraphs: [
-					"Ask whether the seller publishes a dated status page after BattlEye or client patches. Fancy galleries do not help if the tool is offline for three days. Tarkov Cheats posts rebuild notes on <a href=\"/updates/\">Updates</a> for that reason.",
+					"Ask whether the seller publishes a dated status page after Vanguard or client patches. Fancy galleries do not help if the tool is offline for three days. Valorant Hacks posts rebuild notes on <a href=\"/updates/\">Updates</a> for that reason.",
 					"If a shop only answers in private Discord and never writes public notes, assume you will miss patch windows.",
 				],
 			},
 			{
-				h2: "Feature checklist that matches real Tarkov raids",
+				h2: "Feature checklist that matches real Valorant matches",
 				paragraphs: [
-					"For Escape from Tarkov, useful features usually mean player ESP with distance, loot filters, extract awareness, radar for flanks, and soft aim you can tone down. “Unlock all” marketing and battle-royale leftovers are red flags that the page was cloned from another game.",
-					"Compare the stack on <a href=\"/features/\">Features</a>, <a href=\"/tarkov-esp/\">ESP</a>, and <a href=\"/tarkov-aimbot/\">Aimbot</a>. If radar matters to how you hold extracts, confirm it exists before checkout.",
+					"For Valorant, useful features usually mean player ESP with distance, spike ESP, radar for flanks, and soft aim you can tone down. “Unlock all” marketing and cloned copy from other games are red flags that the page was reused.",
+					"Compare the stack on <a href=\"/features/\">Features</a>, <a href=\"/valorant-esp/\">ESP</a>, and <a href=\"/valorant-aimbot/\">Aimbot</a>. If radar matters to how you hold sites, confirm it exists before checkout.",
 				],
 			},
 			{
@@ -433,40 +433,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-cheats-2026-whats-new",
+		id: "valorant-hacks-2026-whats-new",
 		imageKey: "hero",
 		published: "2026-07-26",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Product Updates",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-cheats-2026-whats-new",
-		title: "Tarkov Cheats 2026: What Changed This Year",
-		metaDescription: "What changed for tarkov cheats in 2026 — wipe cadence, BattlEye maintenance habits, ESP focus, and how Tarkov Cheats adapted for Escape from Tarkov.",
-		h1: "What Changed for Tarkov Cheats in 2026",
-		intro: "2026 did not invent cheating in Escape from Tarkov — it raised the bar for maintenance. Wipes, BattlEye pushes, and map updates punish stale builds. Here is what changed in how serious tarkov cheats packages need to operate.",
-		keywords: ["tarkov cheats 2026","eft cheats 2026","battleye 2026","tarkov wipe","tarkov cheats updates"],
-		imageAlt: "2026 updates for Tarkov Cheats on Escape from Tarkov",
+		slug: "valorant-hacks-2026-whats-new",
+		title: "Valorant Hacks 2026: What Changed This Year",
+		metaDescription: "What changed for valorant hacks in 2026 — episode cadence, Vanguard maintenance habits, ESP focus, and how Valorant Hacks adapted for Valorant.",
+		h1: "What Changed for Valorant Hacks in 2026",
+		intro: "2026 did not invent cheating in Valorant — it raised the bar for maintenance. Episode patches, Vanguard pushes, and map updates punish stale builds. Here is what changed in how serious valorant hacks packages need to operate.",
+		keywords: ["valorant hacks 2026","valorant cheats 2026","vanguard 2026","valorant episode","valorant hacks updates"],
+		imageAlt: "2026 updates for Valorant Hacks on Valorant",
 		sections: [
 			{
 				h2: "Why 2026 buyers care more about status pages",
 				paragraphs: [
-					"Players got tired of “undetected forever” slogans. They want a dated note after patches. That is why we invest in the <a href=\"/updates/\">Updates</a> log and the <a href=\"/tarkov-cheats/\">undetected explainer</a> instead of empty guarantees.",
-					"<a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a> and Battlestate client updates still force rebuilds. The shops that survive are the ones that communicate during those windows.",
+					"Players got tired of “undetected forever” slogans. They want a dated note after patches. That is why we invest in the <a href=\"/updates/\">Updates</a> log and the <a href=\"/undetected-valorant-hacks/\">undetected explainer</a> instead of empty guarantees.",
+					"<a href=\"https://www.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Vanguard</a> and Riot client updates still force rebuilds. The shops that survive are the ones that communicate during those windows.",
 				],
 			},
 			{
-				h2: "Feature focus shifted toward raid information",
+				h2: "Feature focus shifted toward round information",
 				paragraphs: [
-					"The winning feature set in 2026 is still ESP, radar, and tunable soft aim — because Tarkov fights are about information and first peeks. Loud rage features matter less than readable overlays you can turn down near extracts.",
-					"See the current stack on <a href=\"/features/\">Features</a> and the pillar at <a href=\"/tarkov-cheats/\">tarkov cheats</a>.",
+					"The winning feature set in 2026 is still ESP, radar, and tunable soft aim — because Valorant fights are about information and first peeks. Loud rage features matter less than readable overlays you can turn down near spike sites.",
+					"See the current stack on <a href=\"/features/\">Features</a> and the pillar at <a href=\"/valorant-hacks/\">valorant hacks</a>.",
 				],
 			},
 			{
 				h2: "What we recommend you do differently this year",
 				paragraphs: [
-					"Check status before patch-day queues. Keep soft aim conservative. Use loot ESP filters so your screen stays clean. Read the <a href=\"/blog/tarkov-cheats-complete-guide-2026/\">complete 2026 guide</a> if you are new to the category.",
+					"Check status before patch-day queues. Keep soft aim conservative. Use spike ESP filters so your screen stays clean. Read the <a href=\"/blog/valorant-hacks-complete-guide-2026/\">complete 2026 guide</a> if you are new to the category.",
 					"Pricing remains monthly and lifetime on <a href=\"/pricing/\">Pricing</a> with digital delivery after payment.",
 				],
 			}
@@ -475,40 +475,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-aimbot-settings-guide",
+		id: "valorant-aimbot-settings-guide",
 		imageKey: "aimbotCombat",
 		published: "2026-07-24",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Aimbot",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-aimbot-settings-guide",
-		title: "Tarkov Aimbot Settings: Smooth FOV Without Looking Robotic",
-		metaDescription: "How to tune tarkov aimbot and soft aim settings — FOV, smoothness, bone priority, and per-weapon profiles that feel natural in Escape from Tarkov raids.",
-		h1: "Tarkov Aimbot Settings That Feel Natural",
-		intro: "A harsh aimbot gets you killed by reports and by your own bad habits. Soft, tunable aim assistance is what most Escape from Tarkov players actually want. Here is how to think about FOV, smoothness, and weapon profiles.",
-		keywords: ["tarkov aimbot settings","tarkov soft aim","aimbot fov","tarkov aim assist","tarkov cheats"],
-		imageAlt: "Soft aim and FOV settings for Tarkov aimbot on Windows PC",
+		slug: "valorant-aimbot-settings-guide",
+		title: "Valorant Aimbot Settings: Smooth FOV Without Looking Robotic",
+		metaDescription: "How to tune valorant aimbot and soft aim settings — FOV, smoothness, bone priority, and per-weapon profiles that feel natural in Valorant matches.",
+		h1: "Valorant Aimbot Settings That Feel Natural",
+		intro: "A harsh aimbot gets you killed by reports and by your own bad habits. Soft, tunable aim assistance is what most Valorant players actually want. Here is how to think about FOV, smoothness, and weapon profiles.",
+		keywords: ["valorant aimbot settings","valorant soft aim","aimbot fov","valorant aim assist","valorant hacks"],
+		imageAlt: "Soft aim and FOV settings for Valorant aimbot on Windows PC",
 		sections: [
 			{
 				h2: "Start softer than you think you need",
 				paragraphs: [
-					"Begin with a smaller FOV and higher smoothness so the assist helps tracking instead of snapping. Play five raids on Customs or Factory and only then widen FOV. If friends watching a demo say it looks robotic, you went too far.",
-					"Full control docs live on <a href=\"/tarkov-aimbot/\">Tarkov Aimbot</a> and <a href=\"/tarkov-aimbot/\">soft aim</a>.",
+					"Begin with a smaller FOV and higher smoothness so the assist helps tracking instead of snapping. Play five games on Bind or Split and only then widen FOV. If friends watching a demo say it looks robotic, you went too far.",
+					"Full control docs live on <a href=\"/valorant-aimbot/\">Valorant Aimbot</a> and <a href=\"/valorant-soft-aim/\">soft aim</a>.",
 				],
 			},
 			{
 				h2: "Per-weapon profiles beat one global slider",
 				paragraphs: [
-					"ARs, SMGs, and bolt-actions want different assist. Save separate profiles so dorms sprays and long Woods peeks do not share the same magnet. Bone priority should favor what you can actually hit under stress — usually upper chest to head transitions, not miracles.",
-					"Hotkeys matter mid-raid. You need to disable assist when you are looting friendlies or holding a suspicious angle where obvious corrections would look wrong.",
+					"Rifles, SMGs, and the Operator want different assist. Save separate profiles so Haven sprays and long Breeze peeks do not share the same magnet. Bone priority should favor what you can actually hit under stress — usually upper chest to head transitions, not miracles.",
+					"Hotkeys matter mid-round. You need to disable assist when you are watching a teammate plant or holding a quiet angle where obvious corrections would look wrong.",
 				],
 			},
 			{
 				h2: "Pair aim settings with information tools",
 				paragraphs: [
-					"Soft aim finishes fights that ESP and radar help you choose. If your overlays are noisy, fix <a href=\"/tarkov-esp/\">ESP categories</a> before blaming aim. After BattlEye patches, confirm <a href=\"/updates/\">Updates</a> before you tune anything on an old build.",
+					"Soft aim finishes fights that ESP and radar help you choose. If your overlays are noisy, fix <a href=\"/valorant-esp/\">ESP categories</a> before blaming aim. After Vanguard patches, confirm <a href=\"/updates/\">Updates</a> before you tune anything on an old build.",
 				],
 			}
 		],
@@ -516,40 +516,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-esp-wallhack-explained",
+		id: "valorant-esp-wallhack-explained",
 		imageKey: "espWallhack",
 		published: "2026-07-21",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "ESP",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-esp-wallhack-explained",
-		title: "Tarkov ESP and Wallhack Explained in Plain English",
-		metaDescription: "What tarkov ESP and wallhack actually show in Escape from Tarkov — players, loot, distance, extracts — and how to keep overlays readable in raids.",
-		h1: "Tarkov ESP and Wallhack Explained Clearly",
-		intro: "“ESP” and “wallhack” get used interchangeably. In Escape from Tarkov they both mean information through walls — but the useful details are distance, filters, and what you choose to hide so your screen stays readable.",
-		keywords: ["tarkov esp","tarkov wallhack","eft esp","loot esp tarkov","tarkov cheats"],
-		imageAlt: "ESP wallhack overlay showing players and loot in Escape from Tarkov",
+		slug: "valorant-esp-wallhack-explained",
+		title: "Valorant ESP and Wallhack Explained in Plain English",
+		metaDescription: "What valorant ESP and wallhack actually show in Valorant — players, distance, spike — and how to keep overlays readable in matches.",
+		h1: "Valorant ESP and Wallhack Explained Clearly",
+		intro: "“ESP” and “wallhack” get used interchangeably. In Valorant they both mean information through walls — but the useful details are distance, filters, and what you choose to hide so your screen stays readable.",
+		keywords: ["valorant esp","valorant wallhack","spike esp","player esp valorant","valorant hacks"],
+		imageAlt: "ESP wallhack overlay showing players and spike in Valorant",
 		sections: [
 			{
-				h2: "What ESP shows during a real raid",
+				h2: "What ESP shows during a real round",
 				paragraphs: [
-					"Player ESP outlines PMCs and Scavs through walls and terrain, often with distance. Loot ESP highlights containers or high-value items. Extract cues help you avoid camping surprises. That information gap is why people search for tarkov esp in the first place.",
-					"Read the dedicated pages for <a href=\"/tarkov-esp/\">ESP</a> and <a href=\"/tarkov-esp/\">wallhack</a> if you want category-level detail.",
+					"Player ESP outlines agents through walls and terrain, often with distance. Spike ESP shows the spike and plant site. That information gap is why people search for valorant esp in the first place.",
+					"Read the dedicated pages for <a href=\"/valorant-esp/\">ESP</a> and <a href=\"/valorant-wallhack/\">wallhack</a> if you want category-level detail.",
 				],
 			},
 			{
 				h2: "How to keep overlays from becoming noise",
 				paragraphs: [
-					"Toggle categories. During a hot push you may want players only. During a loot route you may want containers. Near extract you may want threats and exits. Too many boxes at once create hesitation — the opposite of an advantage.",
-					"Pair ESP with <a href=\"/tarkov-radar-hack/\">radar</a> for flanks outside your field of view. Visibility wins information wars; aim tools cover the firefight afterward.",
+					"Toggle categories. During a hot site take you may want players only. During a retake you may want spike and threats. Too many boxes at once create hesitation — the opposite of an advantage.",
+					"Pair ESP with <a href=\"/valorant-radar-hack/\">radar</a> for flanks outside your field of view. Visibility wins information wars; aim tools cover the firefight afterward.",
 				],
 			},
 			{
 				h2: "Maintenance and responsible use",
 				paragraphs: [
-					"ESP modules rebuild after BattlEye patches like everything else. Check <a href=\"/updates/\">Updates</a> and the <a href=\"/tarkov-cheats/\">undetected guide</a>. No overlay replaces listening and map knowledge — it shortens the time between “I heard something” and “I know where.”",
+					"ESP modules rebuild after Vanguard patches like everything else. Check <a href=\"/updates/\">Updates</a> and the <a href=\"/undetected-valorant-hacks/\">undetected guide</a>. No overlay replaces listening and map knowledge — it shortens the time between “I heard something” and “I know where.”",
 				],
 			}
 		],
@@ -557,40 +557,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "undetected-tarkov-cheats-battleye",
+		id: "undetected-valorant-hacks-vanguard",
 		imageKey: "playerEsp",
 		published: "2026-07-19",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Undetected",
 		featured: true,
 		translations: {
 		en: {
-		slug: "undetected-tarkov-cheats-battleye",
-		title: "Undetected Tarkov Cheats and BattlEye Reality",
-		metaDescription: "What “undetected tarkov cheats” really means under BattlEye — maintenance, patch days, risk, and how to read status before you queue Escape from Tarkov.",
-		h1: "Undetected Tarkov Cheats: What BattlEye Reality Looks Like",
-		intro: "“Undetected” is the most abused word in cheat marketing. Under BattlEye, it means a package is being maintained against current detections — not that bans are impossible. Here is the honest version for Escape from Tarkov players.",
-		keywords: ["undetected tarkov cheats","battleye tarkov","tarkov ban risk","eft undetected","tarkov status"],
-		imageAlt: "BattlEye maintenance status for undetected Tarkov cheats",
+		slug: "undetected-valorant-hacks-vanguard",
+		title: "Undetected Valorant Hacks and Vanguard Reality",
+		metaDescription: "What “undetected valorant hacks” really means under Vanguard — maintenance, patch days, risk, and how to read status before you queue Valorant.",
+		h1: "Undetected Valorant Hacks: What Vanguard Reality Looks Like",
+		intro: "“Undetected” is the most abused word in cheat marketing. Under Vanguard, it means a package is being maintained against current detections — not that bans are impossible. Here is the honest version for Valorant players.",
+		keywords: ["undetected valorant hacks","vanguard valorant","valorant ban risk","valorant cheats","valorant status"],
+		imageAlt: "Vanguard maintenance status for undetected Valorant hacks",
 		sections: [
 			{
 				h2: "What undetected can honestly mean",
 				paragraphs: [
-					"BattlEye is documented at <a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a>. It evolves. Vendors who care publish rebuild notes when ESP, radar, or aim modules need work. Tarkov Cheats does that on <a href=\"/updates/\">Updates</a> and explains the workflow on <a href=\"/updates/\">BattlEye maintenance</a>.",
+					"Vanguard is documented at <a href=\"https://www.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Vanguard</a>. It evolves. Vendors who care publish rebuild notes when ESP, radar, or aim modules need work. Valorant Hacks does that on <a href=\"/updates/\">Updates</a> and explains the workflow on <a href=\"/vanguard-bypass/\">Vanguard maintenance</a>.",
 					"If a seller says “100% undetected forever,” treat it as advertising. Your risk also depends on how obviously you play.",
 				],
 			},
 			{
 				h2: "Patch-day habits that reduce pain",
 				paragraphs: [
-					"After a Tarkov or BattlEye update, wait for a status note before queueing. Confirm Battlestate services on <a href=\"https://www.escapefromtarkov.com/support/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov Support</a> if the launcher itself is failing. Do not run yesterday’s build into today’s anti-cheat and call it bad luck.",
+					"After a Valorant or Vanguard update, wait for a status note before queueing. Confirm Riot services on <a href=\"https://support-valorant.riotgames.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Valorant Support</a> if the launcher itself is failing. Do not run yesterday’s build into today’s anti-cheat and call it bad luck.",
 					"Keep soft aim conservative and avoid highlight-reel rage settings that attract reports even when the binary is clean.",
 				],
 			},
 			{
 				h2: "Where to go next",
 				paragraphs: [
-					"Read <a href=\"/tarkov-cheats/\">undetected tarkov cheats</a>, the <a href=\"/blog/tarkov-cheats-complete-guide-2026/\">2026 complete guide</a>, and <a href=\"/pricing/\">Pricing</a> if you want the maintained stack. Undetected status is a process you check — not a sticker on the box.",
+					"Read <a href=\"/undetected-valorant-hacks/\">undetected valorant hacks</a>, the <a href=\"/blog/valorant-hacks-complete-guide-2026/\">2026 complete guide</a>, and <a href=\"/pricing/\">Pricing</a> if you want the maintained stack. Undetected status is a process you check — not a sticker on the box.",
 				],
 			}
 		],
@@ -598,41 +598,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-cheats-vs-cheatvault",
+		id: "valorant-hacks-vs-budget-shops",
 		imageKey: "cheatsPackage",
 		published: "2026-07-15",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Comparisons",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-cheats-vs-cheatvault-comparison",
-		title: "Tarkov Cheats vs Typical Budget EFT Shops",
-		metaDescription: "How Tarkov Cheats compares to typical budget Escape from Tarkov cheat shops — ESP depth, radar, status pages, pricing, and what “cheap” usually skips.",
-		h1: "Tarkov Cheats vs Typical Budget EFT Cheat Shops",
-		intro: "Budget Escape from Tarkov stores often look identical: neon banners, “undetected” badges, and a low weekly price. Tarkov Cheats costs more than the cheapest tier on purpose. Here is what you usually trade when you chase the lowest sticker.",
-		keywords: ["tarkov cheats comparison","budget eft cheats","tarkov cheats vs other shops","esp radar pricing","tarkov cheats"],
-		imageAlt: "Comparing Tarkov Cheats features against budget EFT cheat shops",
+		slug: "valorant-hacks-vs-budget-shops",
+		title: "Valorant Hacks vs Typical Budget Cheat Shops",
+		metaDescription: "How Valorant Hacks compares to typical budget Valorant cheat shops — ESP depth, radar, status pages, pricing, and what “cheap” usually skips.",
+		h1: "Valorant Hacks vs Typical Budget Cheat Shops",
+		intro: "Budget Valorant stores often look identical: neon banners, “undetected” badges, and a low weekly price. Valorant Hacks costs more than the cheapest tier on purpose. Here is what you usually trade when you chase the lowest sticker.",
+		keywords: ["valorant hacks comparison","budget valorant cheats","valorant hacks vs other shops","esp radar pricing","valorant hacks"],
+		imageAlt: "Comparing Valorant Hacks features against budget cheat shops",
 		sections: [
 			{
 				h2: "What budget shops usually optimize for",
 				paragraphs: [
-					"Low entry price and fast checkout. That can be fine for a weekend experiment. The common gaps are thin loot ESP, no real radar, Discord-only status, and slow rebuild communication after BattlEye pushes.",
-					"Tarkov Cheats focuses on a full raid stack — player ESP, loot filters, radar, soft aim profiles — with a public <a href=\"/updates/\">Updates</a> page. See <a href=\"/features/\">Features</a> for the list.",
+					"Low entry price and fast checkout. That can be fine for a weekend experiment. The common gaps are thin spike ESP, no real radar, Discord-only status, and slow rebuild communication after Vanguard pushes.",
+					"Valorant Hacks focuses on a full match stack — player ESP, spike filters, radar, soft aim profiles — with a public <a href=\"/updates/\">Updates</a> page. See <a href=\"/features/\">Features</a> for the list.",
 				],
 			},
 			{
-				h2: "Price versus what you touch every raid",
+				h2: "Price versus what you touch every match",
 				paragraphs: [
-					"If you only want basic player boxes in casual raids, a cheaper shop might feel enough. If you hold extracts, run loot routes, and hate dying to unseen flanks, radar and clean filters pay for themselves quickly.",
-					"Our monthly and lifetime options are on <a href=\"/pricing/\">Pricing</a>. Read the <a href=\"/blog/escape-from-tarkov-cheats-buyers-guide/\">buyers guide</a> before you compare three storefronts at once.",
+					"If you only want basic player boxes in Unrated, a cheaper shop might feel enough. If you hold sites, run retakes, and hate dying to unseen flanks, radar and clean filters pay for themselves quickly.",
+					"Our monthly and lifetime options are on <a href=\"/pricing/\">Pricing</a>. Read the <a href=\"/blog/valorant-hacks-buyers-guide/\">buyers guide</a> before you compare three storefronts at once.",
 				],
 			},
 			{
 				h2: "How to decide without brand loyalty",
 				paragraphs: [
-					"Write down must-haves: dated status, loot ESP, radar, soft aim profiles, Windows PC support. Open each seller’s status channel and feature list side by side. If a shop fails the status test, price does not matter.",
-					"Then return to <a href=\"/tarkov-cheats/\">tarkov cheats</a> and <a href=\"/tarkov-cheats/\">undetected notes</a> if that checklist matches what we ship.",
+					"Write down must-haves: dated status, spike ESP, radar, soft aim profiles, Windows PC support. Open each seller’s status channel and feature list side by side. If a shop fails the status test, price does not matter.",
+					"Then return to <a href=\"/valorant-hacks/\">valorant hacks</a> and <a href=\"/undetected-valorant-hacks/\">undetected notes</a> if that checklist matches what we ship.",
 				],
 			}
 		],
@@ -640,47 +640,47 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "elitefn-two-week-test",
+		id: "valorant-cheat-two-week-test",
 		imageKey: "aimbotSkeleton",
 		published: "2026-07-08",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Comparisons",
 		featured: false,
 		translations: {
 		en: {
-		slug: "elitefn-vs-tarkov-cheats-two-week-test",
-		title: "I Tested Another Tarkov Cheat for 2 Weeks First",
-		metaDescription: "A two-week test of another Escape from Tarkov cheat before switching to Tarkov Cheats — ESP feel, soft aim, patch downtime, and support differences.",
-		h1: "I Tested Another Tarkov Cheat for Two Weeks Before Switching",
-		intro: "My Discord kept recommending a popular Escape from Tarkov cheat brand. I gave it fourteen days on the same PC and playlists, then moved to Tarkov Cheats. This is what actually differed — without the usual affiliate script.",
-		keywords: ["tarkov cheats review","eft cheat comparison","tarkov cheat downtime","soft aim test","tarkov cheats"],
-		imageAlt: "Two week hands-on comparison between Tarkov cheat providers",
+		slug: "valorant-cheat-two-week-test",
+		title: "I Tested Another Valorant Cheat for 2 Weeks First",
+		metaDescription: "A two-week test of another Valorant cheat before switching to Valorant Hacks — ESP feel, soft aim, patch downtime, and support differences.",
+		h1: "I Tested Another Valorant Cheat for Two Weeks Before Switching",
+		intro: "My Discord kept recommending a popular Valorant cheat brand. I gave it fourteen days on the same PC and playlists, then moved to Valorant Hacks. This is what actually differed — without the usual affiliate script.",
+		keywords: ["valorant hacks review","valorant cheat comparison","valorant hack downtime","soft aim test","valorant hacks"],
+		imageAlt: "Two week hands-on comparison between Valorant hack providers",
 		sections: [
 			{
 				h2: "Week one — setup and first impressions",
 				paragraphs: [
-					"Delivery was fine: license in email, loader as admin, overlays disabled. Menu learning took a couple evenings. Player ESP was readable. Loot ESP felt secondary. I ran several nights with information tools only and no aim assist so I could judge visibility on its own.",
-					"Tarkov Cheats later felt similar on install time, but filters for loot and extracts were easier to toggle independently during loot routes.",
+					"Delivery was fine: license in email, loader as admin, overlays disabled. Menu learning took a couple evenings. Player ESP was readable. Spike ESP felt secondary. I ran several nights with information tools only and no aim assist so I could judge visibility on its own.",
+					"Valorant Hacks later felt similar on install time, but filters for players and spike were easier to toggle independently during site takes.",
 				],
 			},
 			{
-				h2: "Soft aim and the mid-raid feel",
+				h2: "Soft aim and the mid-round feel",
 				paragraphs: [
-					"Conservative FOV soft aim helped SMG and AR tracking. Sniping needed manual profile swaps that slowed me down. When I pushed smoothness too low, corrections looked obvious in review clips. Tuning toward smoother tracking fixed kills and reduced the robotic look.",
-					"On Tarkov Cheats I relied more on per-weapon profiles so dorms and long peeks did not share one magnet. Details are in the <a href=\"/tarkov-aimbot/\">aimbot guide</a>.",
+					"Conservative FOV soft aim helped Spectre and Vandal tracking. Operator needed manual profile swaps that slowed me down. When I pushed smoothness too low, corrections looked obvious in review clips. Tuning toward smoother tracking fixed kills and reduced the robotic look.",
+					"On Valorant Hacks I relied more on per-weapon profiles so Haven and long peeks did not share one magnet. Details are in the <a href=\"/valorant-aimbot/\">aimbot guide</a>.",
 				],
 			},
 			{
 				h2: "The patch window that ended the trial",
 				paragraphs: [
-					"A Tarkov plus BattlEye update landed mid-test. The other tool’s status went quiet without a clear ETA. I skipped queues while my group played without me. A rebuild arrived days later; stability was mixed. That downtime — not a single feature screenshot — pushed me to switch.",
-					"Tarkov Cheats won me over with written notes on <a href=\"/updates/\">Updates</a>. I still do not queue blind after patches on any tool.",
+					"A Valorant plus Vanguard update landed mid-test. The other tool’s status went quiet without a clear ETA. I skipped queues while my group played without me. A rebuild arrived days later; stability was mixed. That downtime — not a single feature screenshot — pushed me to switch.",
+					"Valorant Hacks won me over with written notes on <a href=\"/updates/\">Updates</a>. I still do not queue blind after patches on any tool.",
 				],
 			},
 			{
-				h2: "After switching — what improved for my raids",
+				h2: "After switching — what improved for my matches",
 				paragraphs: [
-					"Independent loot and player toggles cleaned late-raid screens. Radar helped extract holds. Support replies with order ID were fast enough during setup week. Pricing math favored a single full stack over stacking weekly subs — see <a href=\"/pricing/\">Pricing</a>.",
+					"Independent player and spike toggles cleaned late-round screens. Radar helped flank holds. Support replies with order ID were fast enough during setup week. Pricing math favored a single full stack over stacking weekly subs — see <a href=\"/pricing/\">Pricing</a>.",
 					"If you run your own test, measure patch downtime hours, not just day-one vibes. Then read <a href=\"/setup/\">Setup</a> before you buy anything.",
 				],
 			}
@@ -689,48 +689,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-cheats-vs-ghostware",
+		id: "valorant-hacks-vs-esp-only",
 		imageKey: "espWallhack",
 		published: "2026-07-05",
-		updated: "2026-08-13",
+		updated: "2026-08-28",
 		category: "Comparisons",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-cheats-vs-ghostware-features-pricing",
-		title: "Full-Stack Tarkov Cheats vs Minimal ESP Tools",
-		metaDescription: "Full-stack Tarkov Cheats versus minimal ESP-only Escape from Tarkov tools — feature depth, radar, soft aim, pricing, and who should buy which style.",
-		h1: "Full-Stack Tarkov Cheats vs Minimal ESP-Only Tools",
-		intro: "Some Escape from Tarkov tools sell a slim ESP module and call it a day. Tarkov Cheats ships the wider raid stack. Neither philosophy is automatically wrong — they fit different players. Here is a clear comparison.",
-		keywords: ["tarkov esp only cheat","tarkov cheats features","radar vs esp","tarkov cheat pricing","tarkov cheats"],
-		imageAlt: "Full stack Tarkov Cheats compared with minimal ESP-only tools",
+		slug: "valorant-hacks-vs-esp-only-tools",
+		title: "Full-Stack Valorant Hacks vs Minimal ESP Tools",
+		metaDescription: "Full-stack Valorant Hacks versus minimal ESP-only Valorant tools — feature depth, radar, soft aim, pricing, and who should buy which style.",
+		h1: "Full-Stack Valorant Hacks vs Minimal ESP-Only Tools",
+		intro: "Some Valorant tools sell a slim ESP module and call it a day. Valorant Hacks ships the wider match stack. Neither philosophy is automatically wrong — they fit different players. Here is a clear comparison.",
+		keywords: ["valorant esp only cheat","valorant hacks features","radar vs esp","valorant hack pricing","valorant hacks"],
+		imageAlt: "Full stack Valorant Hacks compared with minimal ESP-only tools",
 		sections: [
 			{
-				h2: "Two philosophies: minimal surface vs full raid loop",
+				h2: "Two philosophies: minimal surface vs full match loop",
 				paragraphs: [
-					"Minimal tools focus on player boxes and light assist. Fewer features can mean a simpler menu and a lower price. Full-stack tools add loot filters, radar, and soft aim profiles so one menu covers information and fights.",
-					"Tarkov Cheats is intentionally full-stack. If you only need outlines in quiet raids, a slim ESP product may feel enough. If you rotate, loot, and hold extracts, missing radar becomes obvious.",
+					"Minimal tools focus on player boxes and light assist. Fewer features can mean a simpler menu and a lower price. Full-stack tools add spike filters, radar, and soft aim profiles so one menu covers information and fights.",
+					"Valorant Hacks is intentionally full-stack. If you only need outlines in quiet Unrated games, a slim ESP product may feel enough. If you rotate, take sites, and hold flanks, missing radar becomes obvious.",
 				],
 			},
 			{
 				h2: "Feature and pricing reality check",
 				paragraphs: [
-					"Tarkov Cheats monthly is $35 and lifetime is $150 for ESP, radar, and soft aim together. Slimmer competitors often undercut sticker price while charging extra for modules you assumed were included. Always read the feature list, not the banner.",
-					"Our public comparison points live on <a href=\"/features/\">Features</a>, <a href=\"/tarkov-esp/\">ESP</a>, <a href=\"/tarkov-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>.",
+					"Valorant Hacks monthly is $35 and lifetime is $150 for ESP, radar, and soft aim together. Slimmer competitors often undercut sticker price while charging extra for modules you assumed were included. Always read the feature list, not the banner.",
+					"Our public comparison points live on <a href=\"/features/\">Features</a>, <a href=\"/valorant-esp/\">ESP</a>, <a href=\"/valorant-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>.",
 				],
 			},
 			{
 				h2: "Detection talk without fairy tales",
 				paragraphs: [
 					"Smaller user bases generate fewer public ban screenshots — that is not proof of safety. Larger brands generate more noise even when maintenance is solid. Judge sellers by patch communication speed and whether you can find a dated status note.",
-					"Tarkov Cheats documents maintenance on <a href=\"/updates/\">BattlEye workflow</a> and <a href=\"/tarkov-cheats/\">undetected notes</a>.",
+					"Valorant Hacks documents maintenance on <a href=\"/vanguard-bypass/\">Vanguard workflow</a> and <a href=\"/undetected-valorant-hacks/\">undetected notes</a>.",
 				],
 			},
 			{
 				h2: "Which style should you buy?",
 				paragraphs: [
-					"Choose minimal ESP if budget is tight, you play casually, and you accept Discord-only status tracking. Choose Tarkov Cheats if radar, loot filters, configurable soft aim, and a public Updates URL are must-haves.",
-					"Decide your must-haves on paper first. Then open <a href=\"/tarkov-cheats/\">tarkov cheats</a> or keep shopping slim tools — but do not skip patch-day checks on either path.",
+					"Choose minimal ESP if budget is tight, you play casually, and you accept Discord-only status tracking. Choose Valorant Hacks if radar, spike filters, configurable soft aim, and a public Updates URL are must-haves.",
+					"Decide your must-haves on paper first. Then open <a href=\"/valorant-hacks/\">valorant hacks</a> or keep shopping slim tools — but do not skip patch-day checks on either path.",
 				],
 			}
 		],

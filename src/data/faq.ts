@@ -1,5 +1,6 @@
 import { seoFaqs, siteConfig, type FaqItem } from './site';
 import { crawlPhotoMeta } from './page-images';
+import { pageSitemapMeta } from './sitemap-meta';
 
 export const faqBasePath = '/faq/';
 
@@ -33,7 +34,7 @@ export function getFaqCrawlImage(item: FaqItem) {
 
 /** English FAQ answer routes for sitemap-en.xml — every URL includes a crawl photo. */
 export function getFaqSitemapEntries() {
-	const lastmod = '2026-08-11';
+	const lastmod = pageSitemapMeta.faq.lastmod;
 
 	return seoFaqs.map((item) => {
 		const photo = getFaqCrawlImage(item);

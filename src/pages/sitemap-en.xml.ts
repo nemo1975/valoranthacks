@@ -3,8 +3,14 @@ import { absolutePageUrl, pageSitemapEntries } from '../data/page-sitemap';
 import { getBlogSitemapEntries } from '../data/blog/helpers';
 import { getReviewSitemapEntries } from '../data/reviews';
 import { getFaqSitemapEntries } from '../data/faq';
-import { hreflangLinksXml, resolvePageIdFromPath } from '../data/i18n/routing';
-import { escapeXml, renderImageExtension, renderUrlsetXml, sitemapResponseHeaders } from '../data/sitemap-xml';
+import { hreflangLinksXml, hreflangLinksXmlForPath, resolvePageIdFromPath } from '../data/i18n/routing';
+import {
+	assertLastmod,
+	escapeXml,
+	renderImageExtension,
+	renderUrlsetXml,
+	sitemapResponseHeaders,
+} from '../data/sitemap-xml';
 
 export const prerender = true;
 
@@ -30,11 +36,14 @@ export const GET: APIRoute = () => {
 
 		const imageBlock = images ? `\n${images}` : '';
 		const pageId = resolvePageIdFromPath(entry.path);
-		const hreflangBlock = pageId ? `\n${hreflangLinksXml(pageId, escapeXml)}` : '';
+		const hreflangBlock = pageId
+			? `\n${hreflangLinksXml(pageId, escapeXml)}`
+			: `\n${hreflangLinksXmlForPath(entry.path, escapeXml)}`;
+		const lastmod = assertLastmod(entry.lastmod, entry.path);
 
 		return `  <url>
     <loc>${escapeXml(absolutePageUrl(entry.path))}</loc>
-    <lastmod>${escapeXml(entry.lastmod)}</lastmod>
+    <lastmod>${escapeXml(lastmod)}</lastmod>
     <changefreq>${entry.changefreq}</changefreq>
     <priority>${entry.priority.toFixed(2)}</priority>${hreflangBlock}${imageBlock}
   </url>`;

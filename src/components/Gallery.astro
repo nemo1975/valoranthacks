@@ -1,6 +1,5 @@
 ---
-import { tarkovImages } from '../data/tarkov';
-import { getUi } from '../data/i18n';
+import { valorantImages } from '../data/valorant';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
@@ -10,20 +9,11 @@ interface Props {
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
-const ui = getUi(locale);
 const gallery = getGalleryUi(locale);
 
-const galleryAlts = [
-	ui.images.cheatsPackage,
-	ui.images.espWallhack,
-	ui.images.aimbotCombat,
-	ui.images.headerArt,
-	ui.images.squadFight,
-] as const;
-
-const galleryImages = tarkovImages.gallery.slice(0, 4).map((image, index) => ({
+const galleryImages = valorantImages.gallery.map((image) => ({
 	src: image.src,
-	alt: galleryAlts[index] ?? image.alt,
+	alt: image.alt,
 }));
 ---
 
@@ -68,13 +58,19 @@ const galleryImages = tarkovImages.gallery.slice(0, 4).map((image, index) => ({
 
 	.gallery__grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 		gap: 0.75rem;
 	}
 
 	.gallery__item {
 		margin: 0;
 		aspect-ratio: 16 / 10;
+	}
+
+	@media (max-width: 800px) {
+		.gallery__grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	@media (max-width: 560px) {

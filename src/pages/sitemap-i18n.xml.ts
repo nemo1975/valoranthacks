@@ -9,8 +9,8 @@ import { renderUrlsetXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 export const prerender = true;
 
 /**
- * Combined localized sitemap (525 URLs) — kept for backward compatibility.
- * Prefer sitemap.xml → sitemap-{locale}.xml for regional Search Console submission.
+ * Combined localized sitemap — kept on disk for validators.
+ * HTTP requests 301 to sitemap.xml so Search Console is not given a second copy of the same URLs.
  */
 export const GET: APIRoute = () => {
 	const entries = buildAllI18nSitemapEntries();

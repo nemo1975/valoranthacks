@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Final pass: fix remaining Tarkov references in src/. */
+/** Final pass: fix remaining Valorant references in src/. */
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -8,27 +8,27 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 's
 const REMOVE_PAGE_IDS = ['hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats', 'aimbot-hack', 'esp-hack', 'unlock-all'];
 
 const REPLACEMENTS = [
-	['tarkovImages', 'tarkovImages'],
-	["from '../data/tarkov'", "from '../data/tarkov'"],
-	["from './tarkov'", "from './tarkov'"],
-	['/undetected-tarkov-cheats/', '/undetected-tarkov-cheats/'],
-	['/tarkov-wallhack/', '/tarkov-wallhack/'],
-	['/tarkov-radar-hack/', '/tarkov-radar-hack/'],
-	['/battleye-bypass/', '/battleye-bypass/'],
-	['/tarkov-cheats-2026/', '/tarkov-cheats-2026/'],
-	['/tarkov-aimbot/', '/tarkov-aimbot/'],
-	['/tarkov-esp/', '/tarkov-esp/'],
-	['/tarkov-cheats/', '/tarkov-esp/'],
-	['Tarkov Cheats', 'Tarkov Cheats'],
-	['Tarkov cheats', 'Tarkov cheats'],
-	['Tarkov wallhack', 'Escape from Tarkov wallhack'],
-	['Tarkov radar', 'Escape from Tarkov radar'],
-	['Tarkov Aimbot', 'Escape from Tarkov Aimbot'],
-	['Tarkov ESP', 'Escape from Tarkov ESP'],
-	['Escape from Tarkov', 'Escape from Tarkov'],
-	['BattlEye', 'BattlEye anti-cheat'],
-	['battleye', 'battleye'],
-	['tarkovcheats.org', 'tarkovcheats.org'],
+	['valorantImages', 'valorantImages'],
+	["from '../data/valorant'", "from '../data/valorant'"],
+	["from './valorant'", "from './valorant'"],
+	['/undetected-valorant-hacks/', '/undetected-valorant-hacks/'],
+	['/valorant-wallhack/', '/valorant-wallhack/'],
+	['/valorant-radar-hack/', '/valorant-radar-hack/'],
+	['/vanguard-bypass/', '/vanguard-bypass/'],
+	['/valorant-hacks-2026/', '/valorant-hacks-2026/'],
+	['/valorant-aimbot/', '/valorant-aimbot/'],
+	['/valorant-esp/', '/valorant-esp/'],
+	['/valorant-hacks/', '/valorant-esp/'],
+	['Valorant Hacks', 'Valorant Hacks'],
+	['Valorant hacks', 'Valorant hacks'],
+	['Valorant wallhack', 'Valorant wallhack'],
+	['Valorant radar', 'Valorant radar'],
+	['Valorant Aimbot', 'Valorant Aimbot'],
+	['Valorant ESP', 'Valorant ESP'],
+	['Valorant', 'Valorant'],
+	['Vanguard', 'Vanguard anti-cheat'],
+	['vanguard', 'vanguard'],
+	['valoranthack.net', 'valoranthack.net'],
 	['operatorEsp', 'playerEsp'],
 	['extractFight', 'rebootFight'],
 	['alMazrah', 'battleRoyaleIsland'],

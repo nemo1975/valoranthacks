@@ -8,6 +8,20 @@ export function escapeXml(value: string): string {
 		.replaceAll("'", '&apos;');
 }
 
+const LASTMOD_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+/** W3C date (YYYY-MM-DD). Google ignores lastmod that looks fake or is in the future. */
+export function assertLastmod(value: string, context: string): string {
+	if (!LASTMOD_RE.test(value)) {
+		throw new Error(`[sitemap] Invalid lastmod for ${context}: ${value}`);
+	}
+	const today = new Date().toISOString().slice(0, 10);
+	if (value > today) {
+		throw new Error(`[sitemap] Future lastmod for ${context}: ${value}`);
+	}
+	return value;
+}
+
 /** Guardrail — never emit broken image locs into crawlable sitemaps. */
 export function assertCrawlableAssetUrl(url: string, context: string): string {
 	if (!url || url.includes('undefined') || url.includes('null')) {
@@ -20,6 +34,17 @@ export function assertCrawlableAssetUrl(url: string, context: string): string {
 }
 
 export function renderUrlsetXml(urlBlocks: string[]): string {
+	const seen = new Set<string>();
+	for (const block of urlBlocks) {
+		const loc = block.match(/<loc>([^<]+)<\/loc>/)?.[1];
+		if (!loc) {
+			throw new Error('[sitemap] url block missing <loc>');
+		}
+		if (seen.has(loc)) {
+			throw new Error(`[sitemap] Duplicate <loc> ${loc}`);
+		}
+		seen.add(loc);
+	}
 	const urls = urlBlocks.join('\n');
 	return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -33,6 +58,7 @@ ${urls}
 export const sitemapResponseHeaders = {
 	'Content-Type': 'application/xml; charset=utf-8',
 	'Cache-Control': 'public, max-age=3600',
+	'X-Content-Type-Options': 'nosniff',
 } as const;
 
 export function renderSitemapIndexXml(subSitemaps: { loc: string; lastmod: string }[]): string {

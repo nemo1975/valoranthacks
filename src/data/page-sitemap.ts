@@ -4,6 +4,7 @@ import { pageSitemapMeta } from './sitemap-meta';
 import { resolvedSitemapImages, sitemapLastmod } from './brand-sitemap';
 import { sitemapExcludedPageIds } from './seo-canonical';
 import { getPageCrawlImage } from './page-images';
+import { assertLastmod } from './sitemap-xml';
 
 export type SitemapImage = {
 	url: string;
@@ -40,10 +41,26 @@ export const pageSitemapEntries: PageSitemapEntry[] = pageIds
 			path: englishPaths[pageId],
 			priority: meta.priority,
 			changefreq: meta.changefreq,
-			lastmod: sitemapLastmod(meta.lastmod),
+			lastmod: assertLastmod(sitemapLastmod(meta.lastmod), englishPaths[pageId]),
 			images: [{ url: crawl.url, title: crawl.title, caption: crawl.caption }],
 		};
 	});
+
+/** Indexable host pages for sitemap-images.xml — never 301 / cannibal URLs. */
+const IMAGE_SITEMAP_HOST_IDS: PageId[] = [
+	'home',
+	'features',
+	'pricing',
+	'updates',
+	'valorant-esp',
+	'valorant-aimbot',
+	'hacks',
+	'radar',
+];
+
+export const imageSitemapHostPaths: string[] = IMAGE_SITEMAP_HOST_IDS.filter(
+	(id) => !sitemapExcludedPageIds.has(id),
+).map((id) => englishPaths[id]);
 
 /** Unique keyword images for the dedicated image sitemap (editable in Brand Studio). */
 export const imageSitemapEntries: SitemapImage[] = resolvedSitemapImages().map((entry) =>

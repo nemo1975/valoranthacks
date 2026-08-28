@@ -4,7 +4,7 @@ import { getLocalizedPath, hreflangLinksXml, pageIds, type PageId } from './i18n
 import { defaultLocale, localeCodes, type LocaleCode } from './i18n/locales';
 import { siteConfig } from './site';
 import { pageSitemapMeta } from './sitemap-meta';
-import { escapeXml, assertCrawlableAssetUrl } from './sitemap-xml';
+import { escapeXml, assertCrawlableAssetUrl, assertLastmod } from './sitemap-xml';
 import { sitemapLastmod } from './brand-sitemap';
 import { getPageCrawlImage } from './page-images';
 import { sitemapExcludedPageIds } from './seo-canonical';
@@ -12,6 +12,7 @@ import { sitemapExcludedPageIds } from './seo-canonical';
 export type LocaleSitemapEntry = {
 	path: string;
 	pageId?: PageId;
+	locale: LocaleCode;
 	lastmod: string;
 	priority: number;
 	changefreq: string;
@@ -22,6 +23,13 @@ export type LocaleSitemapEntry = {
 export const i18nLocaleCodes = localeCodes.filter((code) => code !== defaultLocale);
 
 const BLOG_PAGES_PER_LOCALE = 0; // Locale blogs 301 to EN — not indexed
+
+/** Slight crawl hint for Americas languages (Google mostly uses hreflang, not priority). */
+const AMERICA_SITEMAP_BOOST: Partial<Record<LocaleCode, number>> = {
+	es: 0.05,
+	pt: 0.05,
+	fr: 0.03,
+};
 
 /** Build sitemap entries for one non-English locale (product pages + blog URLs). */
 export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntry[] {
@@ -45,8 +53,9 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 		return {
 			path: getLocalizedPath(pageId, locale),
 			pageId,
-			lastmod: sitemapLastmod(meta.lastmod),
-			priority: meta.i18nPriority,
+			locale,
+			lastmod: assertLastmod(sitemapLastmod(meta.lastmod), getLocalizedPath(pageId, locale)),
+			priority: Math.min(0.99, meta.i18nPriority + (AMERICA_SITEMAP_BOOST[locale] ?? 0)),
 			changefreq: meta.changefreq,
 			image: {
 				url: new URL(imageSrc, siteConfig.url).href,
@@ -58,7 +67,8 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 
 	const blogEntries: LocaleSitemapEntry[] = getBlogSitemapEntriesForLocale(locale).map((entry) => ({
 		path: entry.path,
-		lastmod: entry.lastmod,
+		locale,
+		lastmod: assertLastmod(entry.lastmod, entry.path),
 		priority: entry.priority,
 		changefreq: entry.changefreq,
 		image: entry.images[0],
@@ -80,7 +90,9 @@ export function localeSitemapUrl(locale: LocaleCode): string {
 
 export function renderLocaleSitemapUrlBlock(entry: LocaleSitemapEntry): string {
 	const loc = new URL(entry.path, siteConfig.url).href;
-	const hreflangBlock = entry.pageId ? `\n${hreflangLinksXml(entry.pageId, escapeXml)}` : '';
+	const hreflangBlock = entry.pageId
+		? `\n${hreflangLinksXml(entry.pageId, escapeXml, entry.locale)}`
+		: '';
 	if (!entry.image) {
 		throw new Error(`[sitemap] Missing image for locale URL ${entry.path}`);
 	}

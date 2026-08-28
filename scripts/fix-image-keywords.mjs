@@ -2,7 +2,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const SIMPLE =
-	"images: { hero: 'tarkov cheats', espWallhack: 'tarkov cheats wallhack', aimbotCombat: 'tarkov cheats aimbot', squadFight: 'tarkov cheats', playerEsp: 'tarkov cheats esp', headerArt: 'tarkov cheats aimbot', cheatsPackage: 'tarkov cheats radar', rebootFight: 'tarkov cheats aimbot', battleRoyale: 'tarkov cheats', battleRoyaleIsland: 'tarkov cheats esp' }";
+	"images: { hero: 'valorant hacks', espWallhack: 'valorant hacks wallhack', aimbotCombat: 'valorant hacks aimbot', squadFight: 'valorant hacks', playerEsp: 'valorant hacks esp', headerArt: 'valorant hacks aimbot', cheatsPackage: 'valorant hacks radar', rebootFight: 'valorant hacks aimbot', battleRoyale: 'valorant hacks', battleRoyaleIsland: 'valorant hacks esp' }";
 
 const re =
 	/images: \{ hero: '[^']+', espWallhack: '[^']+', aimbotCombat: '[^']+', squadFight: '[^']+', playerEsp: '[^']+', headerArt: '[^']+', cheatsPackage: '[^']+', rebootFight: '[^']+', battleRoyale: '[^']+', battleRoyaleIsland: '[^']+' \}/g;
@@ -15,30 +15,30 @@ for (const f of ['scripts/i18n-data/ui-strings-part1.mjs', 'scripts/i18n-data/ui
 }
 
 const altMap = [
-	["imageAlt: 'Tarkov ESP player tags hack'", "imageAlt: 'tarkov cheats esp'"],
-	["imageAlt: 'Tarkov ESP radar hack'", "imageAlt: 'tarkov cheats radar'"],
-	["imageAlt: 'Tarkov aimbot sniper kill'", "imageAlt: 'tarkov cheats aimbot'"],
-	["imageAlt: 'Tarkov aimbot skeleton targeting'", "imageAlt: 'tarkov cheats aimbot'"],
-	["imageAlt: 'Tarkov cheats ADS combat'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats setup PC activation'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats updates BattlEye maintenance'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats FAQ ESP aimbot'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats support license help'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Undetected tarkov cheats ESP wallhack'", "imageAlt: 'undetected tarkov cheats'"],
-	["imageAlt: 'Tarkov wallhack skeleton ESP'", "imageAlt: 'tarkov cheats wallhack'"],
-	["imageAlt: 'BattlEye bypass tarkov ESP aimbot'", "imageAlt: 'tarkov cheats battleye'"],
-	["imageAlt: 'Tarkov cheats 2026 ESP aimbot'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats combat aimbot'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheat download ESP aimbot'", "imageAlt: 'tarkov cheats download'"],
-	["imageAlt: 'Tarkov mod menu ESP aimbot'", "imageAlt: 'tarkov cheats mod menu'"],
-	["imageAlt: 'Tarkov soft aim aimbot settings'", "imageAlt: 'tarkov cheats soft aim'"],
-	["imageAlt: 'Best tarkov cheats 2026 ESP'", "imageAlt: 'best tarkov cheats'"],
-	["imageAlt: 'Tarkov aimbot hack combat'", "imageAlt: 'tarkov cheats aimbot'"],
-	["imageAlt: 'Tarkov ESP hack wallhack'", "imageAlt: 'tarkov cheats esp'"],
-	["imageAlt: 'Tarkov unlock all ESP aimbot guide'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats privacy policy'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats refund policy'", "imageAlt: 'tarkov cheats'"],
-	["imageAlt: 'Tarkov cheats terms of use'", "imageAlt: 'tarkov cheats'"],
+	["imageAlt: 'Valorant ESP player tags hack'", "imageAlt: 'valorant hacks esp'"],
+	["imageAlt: 'Valorant ESP radar hack'", "imageAlt: 'valorant hacks radar'"],
+	["imageAlt: 'Valorant aimbot sniper kill'", "imageAlt: 'valorant hacks aimbot'"],
+	["imageAlt: 'Valorant aimbot skeleton targeting'", "imageAlt: 'valorant hacks aimbot'"],
+	["imageAlt: 'Valorant hacks ADS combat'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hacks setup PC activation'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hacks updates Vanguard maintenance'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hacks FAQ ESP aimbot'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hacks support license help'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Undetected valorant hacks ESP wallhack'", "imageAlt: 'undetected valorant hacks'"],
+	["imageAlt: 'Valorant wallhack skeleton ESP'", "imageAlt: 'valorant hacks wallhack'"],
+	["imageAlt: 'Vanguard bypass valorant ESP aimbot'", "imageAlt: 'valorant hacks vanguard'"],
+	["imageAlt: 'Valorant hacks 2026 ESP aimbot'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hacks combat aimbot'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hack download ESP aimbot'", "imageAlt: 'valorant hacks download'"],
+	["imageAlt: 'Valorant mod menu ESP aimbot'", "imageAlt: 'valorant hacks mod menu'"],
+	["imageAlt: 'Valorant soft aim aimbot settings'", "imageAlt: 'valorant hacks soft aim'"],
+	["imageAlt: 'Best valorant hacks 2026 ESP'", "imageAlt: 'best valorant hacks'"],
+	["imageAlt: 'Valorant aimbot hack combat'", "imageAlt: 'valorant hacks aimbot'"],
+	["imageAlt: 'Valorant ESP hack wallhack'", "imageAlt: 'valorant hacks esp'"],
+	["imageAlt: 'Valorant unlock all ESP aimbot guide'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hacks privacy policy'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hacks refund policy'", "imageAlt: 'valorant hacks'"],
+	["imageAlt: 'Valorant hacks terms of use'", "imageAlt: 'valorant hacks'"],
 ];
 
 let pages = readFileSync('scripts/i18n-data/pages-en.mjs', 'utf8');
@@ -49,13 +49,13 @@ console.log('pages-en imageAlts simplified');
 // productPage() imageAlt template in pages-i18n
 let i18n = readFileSync('scripts/i18n-data/pages-i18n.mjs', 'utf8');
 i18n = i18n
-	.split("imageAlt: `Tarkov ${meta.altKeyword}`")
-	.join("imageAlt: 'tarkov cheats'")
-	.split("galleryTitle: `Tarkov Cheats ${topicName}`")
-	.join("galleryTitle: 'tarkov cheats'")
-	.split("imageAlt: `Tarkov cheats ${kind} policy`")
-	.join("imageAlt: 'tarkov cheats'")
-	.split("galleryTitle: `Tarkov Cheats ${kind} resources`")
-	.join("galleryTitle: 'tarkov cheats'");
+	.split("imageAlt: `Valorant ${meta.altKeyword}`")
+	.join("imageAlt: 'valorant hacks'")
+	.split("galleryTitle: `Valorant Hacks ${topicName}`")
+	.join("galleryTitle: 'valorant hacks'")
+	.split("imageAlt: `Valorant hacks ${kind} policy`")
+	.join("imageAlt: 'valorant hacks'")
+	.split("galleryTitle: `Valorant Hacks ${kind} resources`")
+	.join("galleryTitle: 'valorant hacks'");
 writeFileSync('scripts/i18n-data/pages-i18n.mjs', i18n);
 console.log('pages-i18n image alts simplified');

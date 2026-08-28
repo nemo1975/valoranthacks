@@ -1,11 +1,22 @@
-# CI Workers Builds project name (repo: tarkovcheats)
-name = "tarkovcheats"
+# Production Worker (custom domains: valoranthack.net + www)
+name = "valoranthacks"
 compatibility_date = "2026-01-01"
 main = "src/worker.ts"
+# Keep the site on the custom domain only — do not index *.workers.dev
+workers_dev = false
+preview_urls = false
 
 [assets]
 directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "404-page"
-# Run Worker first so www/http → https://tarkovcheats.org 301s always apply
+# Run Worker first so www/http → https://valoranthack.net 301s always apply
 run_worker_first = true
+
+[[routes]]
+pattern = "valoranthack.net"
+custom_domain = true
+
+[[routes]]
+pattern = "www.valoranthack.net"
+custom_domain = true
