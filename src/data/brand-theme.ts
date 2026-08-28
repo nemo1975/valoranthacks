@@ -44,8 +44,8 @@ export const themeDefaults: BrandThemeInput = {
 export const themePresets: { id: string; label: string; accent: string; bg: string }[] = [
 	{ id: 'magenta', label: 'Magenta', accent: '#c026d3', bg: '#08090a' },
 	{ id: 'valorant', label: 'Valorant', accent: '#ff4655', bg: '#0f1419' },
-	{ id: 'fortnite', label: 'Fortnite', accent: '#2b9dff', bg: '#0a0e17' },
-	{ id: 'apex', label: 'Apex', accent: '#ff6b2c', bg: '#0c0d10' },
+	{ id: 'blue', label: 'Blue', accent: '#2b9dff', bg: '#0a0e17' },
+	{ id: 'orange', label: 'Orange', accent: '#ff6b2c', bg: '#0c0d10' },
 	{ id: 'teal', label: 'Teal', accent: '#14b8a6', bg: '#071012' },
 	{ id: 'emerald', label: 'Emerald', accent: '#10b981', bg: '#070f0c' },
 	{ id: 'gold', label: 'Gold', accent: '#eab308', bg: '#0c0b08' },

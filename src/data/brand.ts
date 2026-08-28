@@ -174,7 +174,7 @@ export const brand = {
 				caption: 'Custom spike timer with weapon and spike distance markers',
 			},
 			{
-				src: '/images/valorant-hacks-raid.webp',
+				src: '/images/valorant-hacks-combat.webp',
 				title: 'Skeleton ESP in a Valorant hallway',
 				caption: 'Bounding box, skeleton ESP, and wallhack item distances',
 			},

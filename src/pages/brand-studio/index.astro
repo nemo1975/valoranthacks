@@ -115,7 +115,7 @@ const identity: Field[] = [
 	{
 		name: 'name',
 		label: 'Brand name',
-		tip: 'What: The public name of this site. | Why: Shows in the hero, footer, browser tab titles, and Google schema. | Example: Fortnite Hacks, Apex Cheats, Marathon Hacks',
+		tip: 'What: The public name of this site. | Why: Shows in the hero, footer, browser tab titles, and Google schema. | Example: Valorant Hacks',
 		value: brand.name,
 		required: true,
 		maxlength: 80,
@@ -123,7 +123,7 @@ const identity: Field[] = [
 	{
 		name: 'shortName',
 		label: 'Short name',
-		tip: 'What: A shorter label if the full brand is long. | Why: Used where space is tight (manifest / compact UI). | Example: Same as brand name, or "FN Hacks"',
+		tip: 'What: A shorter label if the full brand is long. | Why: Used where space is tight (manifest / compact UI). | Example: Same as brand name, or "Valorant"',
 		value: brand.shortName,
 		required: true,
 		maxlength: 80,
@@ -131,7 +131,7 @@ const identity: Field[] = [
 	{
 		name: 'url',
 		label: 'Site URL (domain)',
-		tip: 'What: Your live domain (https, no slash at the end). | Why: Instantly drives sitemap XML, robots.txt Sitemap line, canonicals, and Open Graph. Change this once — Sitemap section mirrors it live. | Example: https://fortnitehacks.com',
+		tip: 'What: Your live domain (https, no slash at the end). | Why: Instantly drives sitemap XML, robots.txt Sitemap line, canonicals, and Open Graph. Change this once — Sitemap section mirrors it live. | Example: https://valoranthack.net',
 		value: brand.url,
 		type: 'url',
 		required: true,
@@ -176,7 +176,7 @@ const product: Field[] = [
 	{
 		name: 'game',
 		label: 'Game',
-		tip: 'What: The game this template instance is for. | Why: Fills {game} in titles, FAQs, Status copy, and SEO titles like "Valorant Features | Brand". | Example: Fortnite, Apex Legends, Marathon',
+		tip: 'What: The game this template instance is for. | Why: Fills {game} in titles, FAQs, Status copy, and SEO titles like "Valorant Features | Brand". | Example: Valorant',
 		value: brand.game,
 		required: true,
 		maxlength: 80,
@@ -184,7 +184,7 @@ const product: Field[] = [
 	{
 		name: 'antiCheat',
 		label: 'Anti-cheat',
-		tip: 'What: The game anti-cheat system name. | Why: Status / FAQ text mentions rebuilds after this anti-cheat patches. Use {antiCheat} token. | Example: Easy Anti-Cheat, Vanguard, Vanguard',
+		tip: 'What: The game anti-cheat system name. | Why: Status / FAQ text mentions rebuilds after this anti-cheat patches. Use {antiCheat} token. | Example: Vanguard',
 		value: brand.antiCheat,
 		required: true,
 		maxlength: 80,
@@ -250,7 +250,7 @@ const seoFields: Field[] = [
 	{
 		name: 'homeTitle',
 		label: 'Home title',
-		tip: 'What: Google title for the homepage. | Why: First line in search results. Aim for 50-60 characters after tokens resolve. | Example: Marathon Hacks | Undetected marathon hacks',
+		tip: 'What: Google title for the homepage. | Why: First line in search results. Aim for 50-60 characters after tokens resolve. | Example: Valorant Hacks | Official Windows PC Site',
 		value: seo.homeTitle,
 		required: true,
 		maxlength: 70,
@@ -259,7 +259,7 @@ const seoFields: Field[] = [
 	{
 		name: 'homeDescription',
 		label: 'Home description',
-		tip: 'What: Meta description for the homepage. | Why: Snippet under the blue link in Google. Aim for 140-160 characters. | Example: marathon hacks for Windows PC -- ESP, aimbot, and radar...',
+		tip: 'What: Meta description for the homepage. | Why: Snippet under the blue link in Google. Aim for 140-160 characters. | Example: valorant hacks for Windows PC -- ESP, aimbot, and radar...',
 		value: seo.homeDescription,
 		textarea: true,
 		rows: 2,
@@ -270,7 +270,7 @@ const seoFields: Field[] = [
 	{
 		name: 'featuresTitle',
 		label: 'Features title',
-		tip: 'What: Title for the Features page. | Why: Locked pattern is {game} Features | {brand}. | Example: Marathon Features | Marathon Hacks',
+		tip: 'What: Title for the Features page. | Why: Locked pattern is {game} Features | {brand}. | Example: Valorant Features | Valorant Hacks',
 		value: seo.featuresTitle,
 		required: true,
 		maxlength: 70,
@@ -279,7 +279,7 @@ const seoFields: Field[] = [
 	{
 		name: 'featuresDescription',
 		label: 'Features description',
-		tip: 'What: Meta description for Features. | Why: Tells searchers what is included before they click. | Example: Everything in one Marathon license for Windows PC...',
+		tip: 'What: Meta description for Features. | Why: Tells searchers what is included before they click. | Example: Everything in one Valorant license for Windows PC...',
 		value: seo.featuresDescription,
 		textarea: true,
 		rows: 2,
@@ -290,7 +290,7 @@ const seoFields: Field[] = [
 	{
 		name: 'storeTitle',
 		label: 'Store title',
-		tip: 'What: Title for the Store / pricing page. | Why: Drives clicks from "buy" searches. | Example: Marathon Store | Marathon Hacks',
+		tip: 'What: Title for the Store / pricing page. | Why: Drives clicks from "buy" searches. | Example: Valorant Store | Valorant Hacks',
 		value: seo.storeTitle,
 		required: true,
 		maxlength: 70,
@@ -299,7 +299,7 @@ const seoFields: Field[] = [
 	{
 		name: 'storeDescription',
 		label: 'Store description',
-		tip: 'What: Meta description for Store. | Why: Mention plans and instant delivery. | Example: Monthly and lifetime Marathon plans. Same features...',
+		tip: 'What: Meta description for Store. | Why: Mention plans and instant delivery. | Example: Monthly and lifetime Valorant plans. Same features...',
 		value: seo.storeDescription,
 		textarea: true,
 		rows: 2,
@@ -310,7 +310,7 @@ const seoFields: Field[] = [
 	{
 		name: 'statusTitle',
 		label: 'Status title',
-		tip: 'What: Title for the Status page. | Why: Users search patch / undetected status. | Example: Marathon Status | Marathon Hacks',
+		tip: 'What: Title for the Status page. | Why: Users search patch / undetected status. | Example: Valorant Status | Valorant Hacks',
 		value: seo.statusTitle,
 		required: true,
 		maxlength: 70,
@@ -319,7 +319,7 @@ const seoFields: Field[] = [
 	{
 		name: 'statusDescription',
 		label: 'Status description',
-		tip: 'What: Meta description for Status. | Why: Mention {antiCheat} and patch checks. | Example: Live status for Marathon Hacks after Marathon or Vanguard patches...',
+		tip: 'What: Meta description for Status. | Why: Mention {antiCheat} and patch checks. | Example: Live status for Valorant Hacks after Valorant or Vanguard patches...',
 		value: seo.statusDescription,
 		textarea: true,
 		rows: 2,
@@ -330,7 +330,7 @@ const seoFields: Field[] = [
 	{
 		name: 'previewTitle',
 		label: 'Preview title',
-		tip: 'What: Title for the Preview page. | Why: Explains what the product looks like. | Example: Marathon Preview | Marathon Hacks',
+		tip: 'What: Title for the Preview page. | Why: Explains what the product looks like. | Example: Valorant Preview | Valorant Hacks',
 		value: seo.previewTitle,
 		required: true,
 		maxlength: 70,
@@ -339,7 +339,7 @@ const seoFields: Field[] = [
 	{
 		name: 'previewDescription',
 		label: 'Preview description',
-		tip: 'What: Meta description for Preview. | Why: Short product overview for search. | Example: Quick preview of Marathon Hacks -- ESP, aimbot, radar...',
+		tip: 'What: Meta description for Preview. | Why: Short product overview for search. | Example: Quick preview of Valorant Hacks -- ESP, aimbot, radar...',
 		value: seo.previewDescription,
 		textarea: true,
 		rows: 2,
@@ -443,7 +443,7 @@ const keywords: Field[] = [
 	{
 		name: 'primaryKeyword',
 		label: 'Primary keyword',
-		tip: 'What: The #1 phrase you want to rank for. | Why: Used as {primaryKeyword} in taglines and light SEO. Put this phrase in titles naturally -- do not stuff it. | Example: fortnite hacks, apex cheats',
+		tip: 'What: The #1 phrase you want to rank for. | Why: Used as {primaryKeyword} in taglines and light SEO. Put this phrase in titles naturally -- do not stuff it. | Example: valorant hacks, valorant cheats',
 		value: brand.keywords.primary,
 		required: true,
 		maxlength: 80,
@@ -452,7 +452,7 @@ const keywords: Field[] = [
 	{
 		name: 'keywords',
 		label: 'Keyword list',
-		tip: 'What: 5-8 related searches (one per line). | Why: Feeds the meta keywords tag and keeps targeting consistent when you rebrand. | Example: fortnite cheats, fortnite hacks, fortnite esp (one phrase per line)',
+		tip: 'What: 5-8 related searches (one per line). | Why: Feeds the meta keywords tag and keeps targeting consistent when you rebrand. | Example: valorant cheats, valorant hacks, valorant esp (one phrase per line)',
 		value: brand.keywords.list.join('\n'),
 		textarea: true,
 		rows: 6,
@@ -466,7 +466,7 @@ const copyFields: Field[] = [
 	{
 		name: 'tagline',
 		label: 'Tagline',
-		tip: 'What: Short marketing line under the brand. | Why: Used in schema and compact promos. Tokens allowed. | Example: Undetected marathon hacks -- ESP, aimbot, and radar for PC',
+		tip: 'What: Short marketing line under the brand. | Why: Used in schema and compact promos. Tokens allowed. | Example: Undetected valorant hacks -- ESP, aimbot, and radar for PC',
 		value: copy.tagline,
 		required: true,
 		maxlength: 160,
@@ -475,7 +475,7 @@ const copyFields: Field[] = [
 	{
 		name: 'summary',
 		label: 'Summary',
-		tip: 'What: One paragraph about the product. | Why: About-style copy and structured data context. | Example: Marathon Hacks is an undetected Marathon cheat package...',
+		tip: 'What: One paragraph about the product. | Why: About-style copy and structured data context. | Example: Valorant Hacks is an undetected Valorant cheat package...',
 		value: copy.summary,
 		textarea: true,
 		rows: 3,
@@ -495,7 +495,7 @@ const copyFields: Field[] = [
 	{
 		name: 'blogLabel',
 		label: 'Blog / intel label',
-		tip: 'What: Nav label for blog or intel section. | Why: Shown in navigation when blog is enabled. | Example: Marathon Intel, Valorant Intel',
+		tip: 'What: Nav label for blog or intel section. | Why: Shown in navigation when blog is enabled. | Example: Valorant Intel',
 		value: copy.blogLabel,
 		required: true,
 		maxlength: 80,
@@ -678,7 +678,7 @@ const images: Field[] = [
 	{
 		name: 'logoAlt',
 		label: 'Logo alt text',
-		tip: 'What: Accessibility text for the logo image. | Why: Screen readers and image SEO. | Example: Marathon Hacks logo',
+		tip: 'What: Accessibility text for the logo image. | Why: Screen readers and image SEO. | Example: Valorant Hacks logo',
 		value: brand.logoAlt,
 		maxlength: 120,
 	},
@@ -703,14 +703,14 @@ const images: Field[] = [
 	{
 		name: 'defaultOgImage',
 		label: 'Default OG image',
-		tip: 'What: Default image when the site is shared on Discord / Twitter / Facebook. | Why: Open Graph preview. Put a real in-game or brand shot under /images/. | Example: /images/fortnite-combat.webp',
+		tip: 'What: Default image when the site is shared on Discord / Twitter / Facebook. | Why: Open Graph preview. Put a real in-game or brand shot under /images/. | Example: /images/valorant-hacks-combat.webp',
 		value: brand.defaultOgImage,
 		maxlength: 300,
 	},
 	{
 		name: 'heroImage',
 		label: 'Hero image',
-		tip: 'What: Big homepage banner image path. | Why: First thing visitors see. Keep file in /public/images/. | Example: /images/fortnite-hero-banner.webp',
+		tip: 'What: Big homepage banner image path. | Why: First thing visitors see. Keep file in /public/images/. | Example: /images/valorant-hacks-hero-1024w.webp',
 		value: brand.heroImage,
 		maxlength: 300,
 	},

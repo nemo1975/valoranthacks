@@ -8,10 +8,7 @@ export type BlogImageKey =
 	| 'squadFight'
 	| 'headerArt'
 	| 'cheatsPackage'
-	| 'playerEsp'
-	| 'rebootFight'
-	| 'battleRoyaleCombat'
-	| 'battleRoyaleIslandMap';
+	| 'playerEsp';
 
 export type BlogSection = {
 	h2: string;

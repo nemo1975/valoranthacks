@@ -19,9 +19,6 @@ const imageMap: Record<BlogImageKey, string> = {
 	headerArt: valorantImages.playerEsp,
 	cheatsPackage: valorantImages.espWallhack,
 	playerEsp: valorantImages.playerEsp,
-	rebootFight: valorantImages.aimbotCombat,
-	battleRoyaleCombat: valorantImages.cheatsCombat,
-	battleRoyaleIslandMap: valorantImages.espWallhack,
 };
 
 const FALLBACK_BLOG_IMAGE = valorantImages.espWallhack;

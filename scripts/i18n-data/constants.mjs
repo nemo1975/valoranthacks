@@ -18,18 +18,18 @@ export const HERO_IMAGES = {
 	'valorant-esp': '/images/valorant-hacks-radar.webp',
 	'valorant-aimbot': '/images/valorant-hacks-aimbot.webp',
 	features: '/images/valorant-hacks-aimbot-view.webp',
-	pricing: '/images/valorant-hacks-raid.webp',
+	pricing: '/images/valorant-hacks-combat.webp',
 	setup: '/images/valorant-hacks-radar.webp',
 	updates: '/images/valorant-hacks-esp.webp',
 	faq: '/images/valorant-hacks-aimbot-view.webp',
-	support: '/images/valorant-hacks-raid.webp',
+	support: '/images/valorant-hacks-combat.webp',
 	undetected: '/images/valorant-hacks-wallhack.webp',
 	wallhack: '/images/valorant-hacks-wallhack.webp',
 	radar: '/images/valorant-hacks-radar.webp',
 	vanguard: '/images/valorant-hacks-aimbot.webp',
 	'cheats-2026': '/images/valorant-hacks-esp.webp',
-	hacks: '/images/valorant-hacks-raid.webp',
-	'cheat-download': '/images/valorant-hacks-raid.webp',
+	hacks: '/images/valorant-hacks-combat.webp',
+	'cheat-download': '/images/valorant-hacks-combat.webp',
 	'mod-menu': '/images/valorant-hacks-radar.webp',
 	'soft-aim': '/images/valorant-hacks-aimbot-view.webp',
 	'best-cheats': '/images/valorant-hacks-esp.webp',
@@ -37,7 +37,7 @@ export const HERO_IMAGES = {
 	'esp-hack': '/images/valorant-hacks-wallhack.webp',
 	'unlock-all': '/images/valorant-hacks-radar.webp',
 	privacy: '/images/valorant-hacks-aimbot.webp',
-	refund: '/images/valorant-hacks-raid.webp',
+	refund: '/images/valorant-hacks-combat.webp',
 	terms: '/images/valorant-hacks-aimbot-view.webp',
 };
 
@@ -67,7 +67,7 @@ export type LocaleUi = {
 \tfooter: { explore: string; help: string; tagline: string };
 \timages: {
 \t\thero: string; espWallhack: string; aimbotCombat: string; squadFight: string; playerEsp: string;
-\t\theaderArt: string; cheatsPackage: string; rebootFight: string; battleRoyale: string; battleRoyaleIsland: string;
+\t\theaderArt: string; cheatsPackage: string; firefight: string; matchOverview: string; spikeEsp: string;
 \t};
 };
 export type PageId = 'home' | 'valorant-esp' | 'valorant-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'vanguard' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
@@ -123,8 +123,6 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
-	activision:
-		'<a href="https://playvalorant.com/" target="_blank" rel="noopener noreferrer">Valorant</a>',
 	valorant:
 		'<a href="https://playvalorant.com/" target="_blank" rel="noopener noreferrer">Valorant</a>',
 	status:

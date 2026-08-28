@@ -7,9 +7,9 @@ export const DESCRIPTIVE_IMAGE_ALTS = {
 	playerEsp: 'Player ESP boxes and distance readouts in a Valorant match',
 	headerArt: 'Aimbot view and bone priority controls for Valorant',
 	cheatsPackage: '2D radar threat overlay for Valorant',
-	rebootFight: 'Aimbot assist during a Valorant firefight',
-	battleRoyale: 'Valorant Hacks in-match overview for Windows PC',
-	battleRoyaleIsland: 'ESP markers for agents and the spike in Valorant',
+	firefight: 'Aimbot assist during a Valorant firefight',
+	matchOverview: 'Valorant Hacks in-match overview for Windows PC',
+	spikeEsp: 'ESP markers for agents and the spike in Valorant',
 };
 
 /** Page-level image alt by pageId (EN source of truth). */

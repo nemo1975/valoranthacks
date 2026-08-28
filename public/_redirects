@@ -15,7 +15,7 @@
 /sitemap-images.xml/ /sitemap-images.xml 301
 /sitemap-i18n.xml/ /sitemap.xml 301
 
-# Legacy blog slugs (Tarkov/Fortnite leftover names) → Valorant URLs
+# Legacy blog slugs → Valorant URLs
 /blog/secret-loot-routes-full-gold /blog/valorant-buy-rounds-guide/ 301
 /blog/secret-loot-routes-full-gold/ /blog/valorant-buy-rounds-guide/ 301
 /blog/valorant-loot-routes-guide /blog/valorant-buy-rounds-guide/ 301
@@ -56,6 +56,9 @@
 /valorant-wallhack/ /valorant-esp/ 301
 /valorant-hack-download /setup/ 301
 /valorant-hack-download/ /setup/ 301
+/images/valorant-hacks-raid.webp /images/valorant-hacks-combat.webp 301
+/images/valorant-hacks-raid-480w.webp /images/valorant-hacks-combat-480w.webp 301
+/images/valorant-hacks-raid-960w.webp /images/valorant-hacks-combat-960w.webp 301
 /vanguard-bypass /updates/ 301
 /vanguard-bypass/ /updates/ 301
 
@@ -74,7 +77,7 @@
 /reviews/valorant-controller-soft-aim-review-ctrl-player99/ /reviews/valorant-soft-aim-review-ctrl-player99/ 301
 
 
-# Legacy escape-from-valorant slugs (Tarkov find-replace leftover) -> valorant-hacks URLs
+# Legacy broken slugs → valorant-hacks URLs
 /de/escape-from-valorant-hacks-funktionen /de/valorant-hacks-funktionen/ 301
 /de/escape-from-valorant-hacks-funktionen/ /de/valorant-hacks-funktionen/ 301
 /de/escape-from-valorant-hacks-preise /de/valorant-hacks-preise/ 301

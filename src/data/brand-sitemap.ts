@@ -38,7 +38,7 @@ const defaultImages: BrandSitemapImage[] = [
 		caption: 'valorant hacks radar hack',
 	},
 	{
-		src: '/images/valorant-hacks-raid.webp',
+		src: '/images/valorant-hacks-combat.webp',
 		title: 'valorant hacks',
 		caption: 'valorant hacks in a match',
 	},
