@@ -44,23 +44,7 @@ const USER_SCREENSHOTS = [
 const HERO_WIDTHS = [480, 640, 960, 1400];
 const CONTENT_WIDTHS = [480, 960];
 
-const REMOVE_PREFIXES = [
-	'valorant-battle-royale-combat',
-	'valorant-extract-fight',
-	'valorant-hacks-aimbot',
-	'valorant-hacks-cover',
-	'valorant-hacks-esp-wallhack',
-	'valorant-hacks-hero',
-	'valorant-hacks-logo',
-	'valorant-hacks-package',
-	'valorant-header-art',
-	'valorant-loadout-builder',
-	'valorant-player-esp',
-	'valorant-deathmatch-combat',
-	'valorant-deathmatch-mode',
-	'valorant-squad-fight',
-	'valorant-verdansk-map',
-];
+const REMOVE_PREFIXES = [];
 
 async function removeOldValorantImages() {
 	const files = await readdir(imagesDir).catch(() => []);

@@ -14,28 +14,6 @@ const CANONICAL_ORIGIN = 'https://valoranthack.net';
 const CANONICAL_HOST = 'valoranthack.net';
 const WWW_HOST = 'www.valoranthack.net';
 
-/** Old hosts still 301 → current canonical. Never put the live apex in this set. */
-const LEGACY_HOSTS = new Set([
-	'tarkovcheats.org',
-	'www.tarkovcheats.org',
-	'fortnitehack.net',
-	'www.fortnitehack.net',
-	'fortnitecheats.xyz',
-	'www.fortnitecheats.xyz',
-	'fortnitecheats.net',
-	'www.fortnitecheats.net',
-	'fortnitecheats.com',
-	'www.fortnitecheats.com',
-	'warzonehacks.net',
-	'www.warzonehacks.net',
-	'warzonescheats.net',
-	'www.warzonescheats.net',
-	'warzonescheats.com',
-	'www.warzonescheats.com',
-	'warzonescheats.xyz',
-	'www.warzonescheats.xyz',
-]);
-
 const SECURITY_HEADERS: Record<string, string> = {
 	'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload',
 	'X-Content-Type-Options': 'nosniff',
@@ -127,9 +105,8 @@ export default {
 		const host = (request.headers.get('host') || url.hostname).split(':')[0].toLowerCase();
 		const proto = getClientProtocol(request);
 
-		const isLegacyHost = LEGACY_HOSTS.has(host) && host !== CANONICAL_HOST;
-		const isProductionHost = host === CANONICAL_HOST || host === WWW_HOST || isLegacyHost;
-		const needsHostRedirect = host === WWW_HOST || isLegacyHost;
+		const isProductionHost = host === CANONICAL_HOST || host === WWW_HOST;
+		const needsHostRedirect = host === WWW_HOST;
 		const needsHttpsRedirect = isProductionHost && proto === 'http';
 
 		if (

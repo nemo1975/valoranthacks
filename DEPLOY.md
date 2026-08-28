@@ -68,7 +68,7 @@ Cloudflare CNAME flattening handles apex records automatically.
    - **Target:** `https://valoranthack.net/${1}`
    - **Status:** 301
 
-The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`valoranthack.net`, `.net`, `.com`), and legacy path redirects.
+The deployed Worker also enforces HTTPS and `www` → apex (`https://valoranthack.net`).
 
 ### SSL / HTTPS
 
@@ -91,9 +91,7 @@ Verify redirects:
 
 - `http://valoranthack.net` → `https://valoranthack.net` (301)
 - `https://www.valoranthack.net` → `https://valoranthack.net` (301)
-- Legacy domains (e.g. `valoranthack.net`) → `https://valoranthack.net` (301)
 - `/sitemap-index.xml` → `/sitemap.xml` (301)
-- Legacy paths (e.g. `/fortnite-hacks/`) → Valorant equivalents (301)
 
 ## 5. Google Search Console
 
@@ -128,7 +126,6 @@ Verify redirects:
 - [ ] Cloudflare Pages project attached to this repo
 - [ ] Custom domain `valoranthack.net` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `valoranthack.net`
 - [ ] Always Use HTTPS enabled
 - [ ] `robots.txt` and sitemaps serve from `https://valoranthack.net`
 - [ ] Google Search Console domain verified

@@ -6,93 +6,59 @@ import { buildOverlaySvg } from './valorant-hack-overlays.mjs';
 const imagesDir = path.resolve('public/images');
 const publicDir = path.resolve('public');
 
-/** Verified IGN Valorant screenshot CDN paths. */
-const ME_G = 'https://sm.ign.com/t/ign_me/gallery/c/call-of-du';
-const ME = 'https://sm.ign.com/t/ign_me/screenshot/c/call-of-du';
-const NL = 'https://sm.ign.com/t/ign_nl/screenshot/c/call-of-du';
-const BR = 'https://sm.ign.com/t/ign_br/screenshot/default';
-const PK = 'https://sm.ign.com/t/ign_pk/screenshot/default';
+/** IGN Valorant screenshot CDN (Valorant gallery paths only). */
+const IGN = 'https://sm.ign.com/t/ign_in/screenshot/v/valorant';
+const IGN_G = 'https://sm.ign.com/t/ign_in/gallery/v/valorant';
 
 /**
  * Valorant hacks image pipeline:
  * 1. Download real Valorant gameplay from IGN
- * 2. Composite ESP / aimbot / radar / mod-menu overlays for valorant hacks marketing
+ * 2. Composite ESP / aimbot / radar / mod-menu overlays
  */
 const KEYWORD_ASSETS = [
 	{
 		file: 'valorant-hacks-hero.webp',
-		url: `${ME_G}/valorant-screenshots_wjkx.1400.jpg`,
+		url: `${IGN_G}/valorant-screenshots_wjkx.1400.jpg`,
 		overlay: 'hero',
 	},
 	{
 		file: 'valorant-hacks-aimbot.webp',
-		url: `${ME}/valorant-screenshots_wjb1.1400.jpg`,
+		url: `${IGN}/valorant-screenshots_wjb1.1400.jpg`,
 		overlay: 'aimbot',
 	},
 	{
-		file: 'valorant-hacks-esp-wallhack.webp',
-		url: `${ME}/valorant-screenshots_55fp.1400.jpg`,
+		file: 'valorant-hacks-wallhack.webp',
+		url: `${IGN}/valorant-screenshots_55fp.1400.jpg`,
 		overlay: 'wallhack',
 	},
 	{
-		file: 'valorant-squad-fight.webp',
-		url: `${ME}/valorant-screenshots_67cp.1400.jpg`,
+		file: 'valorant-hacks-esp.webp',
+		url: `${IGN}/valorant-screenshots_67cp.1400.jpg`,
 		overlay: 'esp',
 	},
 	{
 		file: 'valorant-hacks-package.webp',
-		url: `${ME}/valorant-screenshots_anf4.1400.jpg`,
+		url: `${IGN}/valorant-screenshots_anf4.1400.jpg`,
 		overlay: 'menu',
 	},
 	{
 		file: 'valorant-hacks-cover.webp',
-		url: `${ME}/valorant-screenshots_7pr8.1400.jpg`,
+		url: `${IGN}/valorant-screenshots_7pr8.1400.jpg`,
 		overlay: 'esp',
 	},
 	{
-		file: 'valorant-header-art.webp',
-		url: `${ME}/valorant-screenshots_c36j.1400.jpg`,
-		overlay: 'hero',
+		file: 'valorant-hacks-radar.webp',
+		url: `${IGN}/valorant-screenshots_rb92.1400.jpg`,
+		overlay: 'spike',
 	},
 	{
-		file: 'valorant-loadout-builder.webp',
-		url: `${NL}/valorant-screenshots_e5gw.1400.jpg`,
-		overlay: 'menu',
-	},
-	{
-		file: 'valorant-battle-royale-combat.webp',
-		url: `${ME}/valorant-screenshots_4h92.1400.jpg`,
-		overlay: 'esp',
-	},
-	{
-		file: 'valorant-extract-fight.webp',
-		url: `${BR}/goulag-inside_zusa.1400.png`,
-		overlay: 'extract',
-	},
-	{
-		file: 'valorant-player-esp.webp',
-		url: `${ME}/valorant-screenshots_rb92.1400.jpg`,
-		overlay: 'esp',
-	},
-	{
-		file: 'valorant-deathmatch-combat.webp',
-		url: `${BR}/plunder_px6d.1400.png`,
+		file: 'valorant-hacks-combat.webp',
+		url: `${IGN}/valorant-screenshots_4h92.1400.jpg`,
 		overlay: 'deathmatch',
-	},
-	{
-		file: 'valorant-deathmatch-mode.webp',
-		url: `${BR}/parachuting_qhh2.1400.png`,
-		overlay: 'loot',
-	},
-	{
-		file: 'valorant-verdansk-map.webp',
-		url: `${PK}/wz-verdansksubway-1601169413816_x2hg.1400.jpg`,
-		overlay: 'map',
 	},
 ];
 
 const REMOVE_PATTERNS = [
-	/^fortnite-/,
 	/-\d+w\.webp$/i,
 	/^valorant-hacks-logo/,
 ];

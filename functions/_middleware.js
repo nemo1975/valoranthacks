@@ -5,28 +5,6 @@ const CANONICAL_ORIGIN = 'https://valoranthack.net';
 const APEX_HOST = 'valoranthack.net';
 const WWW_HOST = 'www.valoranthack.net';
 
-/** Old domains → canonical apex (301). Never include APEX_HOST — that 301s the live site to itself. */
-const LEGACY_HOSTS = new Set([
-	'tarkovcheats.org',
-	'www.tarkovcheats.org',
-	'fortnitehack.net',
-	'www.fortnitehack.net',
-	'fortnitecheats.xyz',
-	'www.fortnitecheats.xyz',
-	'fortnitecheats.net',
-	'www.fortnitecheats.net',
-	'fortnitecheats.com',
-	'www.fortnitecheats.com',
-	'warzonehacks.net',
-	'www.warzonehacks.net',
-	'warzonescheats.net',
-	'www.warzonescheats.net',
-	'warzonescheats.com',
-	'www.warzonescheats.com',
-	'warzonescheats.xyz',
-	'www.warzonescheats.xyz',
-]);
-
 // Keep in sync with public/_redirects — map lives in path-redirects.json.
 
 const SECURITY_HEADERS = {
@@ -112,9 +90,8 @@ export async function onRequest(context) {
 	const host = url.hostname.toLowerCase();
 	const proto = getClientProtocol(context.request);
 
-	const isLegacyHost = LEGACY_HOSTS.has(host) && host !== APEX_HOST;
-	const isProductionHost = host === APEX_HOST || host === WWW_HOST || isLegacyHost;
-	const needsHostRedirect = host === WWW_HOST || isLegacyHost;
+	const isProductionHost = host === APEX_HOST || host === WWW_HOST;
+	const needsHostRedirect = host === WWW_HOST;
 	const needsHttpsRedirect = isProductionHost && proto === 'http';
 
 	if (needsHostRedirect || needsHttpsRedirect) {

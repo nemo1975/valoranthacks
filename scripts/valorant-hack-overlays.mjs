@@ -98,7 +98,7 @@ export function modMenuOverlay(w, h) {
 		.join('');
 	return `
 		<rect x="${x}" y="${y}" width="${pw}" height="${ph}" fill="rgba(10,6,18,0.9)" stroke="${PURPLE}" stroke-width="2" rx="10"/>
-		<text x="${x + 14}" y="${y + 28}" fill="${PURPLE}" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="800">WARZONE HACKS</text>
+		<text x="${x + 14}" y="${y + 28}" fill="${PURPLE}" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="800">VALORANT HACKS</text>
 		<text x="${x + 14}" y="${y + 44}" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">UNDETECTED · v2026</text>
 		<line x1="${x + 10}" y1="${y + 50}" x2="${x + pw - 10}" y2="${y + 50}" stroke="rgba(192,132,252,0.3)" stroke-width="1"/>
 		${rowSvg}
@@ -109,7 +109,7 @@ export function modMenuOverlay(w, h) {
 export function hacksBadge(w, h) {
 	return `
 		<rect x="${w - 168}" y="${h - 36}" width="158" height="26" fill="rgba(10,6,18,0.78)" rx="4"/>
-		<text x="${w - 160}" y="${h - 18}" fill="${PURPLE}" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">WARZONE HACKS</text>
+		<text x="${w - 160}" y="${h - 18}" fill="${PURPLE}" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">VALORANT HACKS</text>
 	`;
 }
 
@@ -122,16 +122,16 @@ export function buildOverlaySvg(width, height, preset) {
 		case 'hero':
 			body += espBox(width * 0.52, height * 0.22, width * 0.12, height * 0.28, 'Enemy · 47m', RED, snap);
 			body += espBox(width * 0.28, height * 0.35, width * 0.09, height * 0.22, 'Enemy · 82m', RED, snap);
-			body += espBox(width * 0.71, height * 0.38, width * 0.08, height * 0.2, 'Loadout · 31m', GREEN);
+			body += espBox(width * 0.71, height * 0.38, width * 0.08, height * 0.2, 'Spike · 31m', GREEN);
 			body += aimbotOverlay(width, height);
 			body += radarOverlay(width, height);
 			break;
 		case 'esp':
-			body += espBox(width * 0.18, height * 0.25, width * 0.11, height * 0.32, 'Operator · 56m', RED, snap);
-			body += espBox(width * 0.45, height * 0.18, width * 0.1, height * 0.28, 'Operator · 112m', RED, snap);
-			body += espBox(width * 0.62, height * 0.32, width * 0.09, height * 0.24, 'Operator · 74m', RED, snap);
-			body += espBox(width * 0.78, height * 0.4, width * 0.07, height * 0.18, 'Vehicle · 95m', '#fbbf24');
-			body += espBox(width * 0.35, height * 0.55, width * 0.06, height * 0.1, 'Contract · 41m', GREEN);
+			body += espBox(width * 0.18, height * 0.25, width * 0.11, height * 0.32, 'Agent · 56m', RED, snap);
+			body += espBox(width * 0.45, height * 0.18, width * 0.1, height * 0.28, 'Agent · 112m', RED, snap);
+			body += espBox(width * 0.62, height * 0.32, width * 0.09, height * 0.24, 'Agent · 74m', RED, snap);
+			body += espBox(width * 0.78, height * 0.4, width * 0.07, height * 0.18, 'Enemy · 95m', '#fbbf24');
+			body += espBox(width * 0.35, height * 0.55, width * 0.06, height * 0.1, 'Spike · 41m', GREEN);
 			break;
 		case 'aimbot':
 			body += espBox(width * 0.58, height * 0.28, width * 0.1, height * 0.26, 'Target · 38m', RED);
@@ -143,15 +143,15 @@ export function buildOverlaySvg(width, height, preset) {
 			body += `<line x1="${width * 0.32}" y1="${height * 0.44}" x2="${width * 0.6}" y2="${height * 0.35}" stroke="${PURPLE}" stroke-width="1.5" stroke-dasharray="6 4" stroke-opacity="0.6"/>`;
 			break;
 		case 'radar':
-			body += espBox(width * 0.48, height * 0.26, width * 0.1, height * 0.26, 'Operator · 52m', RED, snap);
+			body += espBox(width * 0.48, height * 0.26, width * 0.1, height * 0.26, 'Agent · 52m', RED, snap);
 			body += radarOverlay(width, height);
 			break;
 		case 'menu':
 			body += espBox(width * 0.2, height * 0.32, width * 0.09, height * 0.24, 'Enemy · 67m', RED, snap);
 			body += modMenuOverlay(width, height);
 			break;
-		case 'extract':
-			body += espBox(width * 0.42, height * 0.28, width * 0.14, height * 0.38, 'Gulag · 12m', RED, snap);
+		case 'site':
+			body += espBox(width * 0.42, height * 0.28, width * 0.14, height * 0.38, 'Site · 12m', RED, snap);
 			body += aimbotOverlay(width, height);
 			break;
 		case 'deathmatch':
@@ -159,16 +159,16 @@ export function buildOverlaySvg(width, height, preset) {
 			body += espBox(width * 0.58, height * 0.35, width * 0.09, height * 0.22, 'Squad · 71m', RED, snap);
 			body += radarOverlay(width, height);
 			break;
-		case 'loot':
+		case 'spike':
 			body += espBox(width * 0.3, height * 0.45, width * 0.07, height * 0.09, 'Spike · 28m', GREEN);
 			body += espBox(width * 0.55, height * 0.38, width * 0.06, height * 0.08, 'Ability · 55m', GREEN);
 			body += espBox(width * 0.68, height * 0.52, width * 0.06, height * 0.08, 'Spike timer · 0:38', '#fbbf24');
-			body += espBox(width * 0.44, height * 0.22, width * 0.09, height * 0.24, 'Operator · 88m', RED, snap);
+			body += espBox(width * 0.44, height * 0.22, width * 0.09, height * 0.24, 'Agent · 88m', RED, snap);
 			break;
 		case 'map':
-			body += espBox(width * 0.35, height * 0.4, width * 0.08, height * 0.12, 'Hot Zone', RED);
-			body += espBox(width * 0.55, height * 0.32, width * 0.07, height * 0.1, 'Loadout', GREEN);
-			body += espBox(width * 0.62, height * 0.55, width * 0.09, height * 0.11, 'Contract', GREEN);
+			body += espBox(width * 0.35, height * 0.4, width * 0.08, height * 0.12, 'A Site', RED);
+			body += espBox(width * 0.55, height * 0.32, width * 0.07, height * 0.1, 'Spike', GREEN);
+			body += espBox(width * 0.62, height * 0.55, width * 0.09, height * 0.11, 'Ult', GREEN);
 			break;
 		default:
 			body += espBox(width * 0.4, height * 0.3, width * 0.1, height * 0.26, 'Enemy · 60m', RED, snap);
