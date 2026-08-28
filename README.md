@@ -1,6 +1,6 @@
 # Valorant Hacks — Marketing Site
 
-Static Astro 7 site for [valoranthack.net](https://valoranthack.net). Primary SEO keyword: **valorant hacks** (secondary: escape from valorant hacks, aimbot, ESP).
+Static Astro 7 site for [valoranthack.net](https://valoranthack.net). Primary SEO keyword: **valorant hacks** (secondary: valorant cheats, aimbot, ESP).
 
 ## Stack
 
