@@ -10,7 +10,7 @@
 		"sync:brand": "node scripts/sync-brand.mjs && node scripts/sync-cannibal-redirects.mjs",
 		"prebuild": "node scripts/sync-brand.mjs && node scripts/sync-cannibal-redirects.mjs",
 		"build": "astro build",
-		"postbuild": "node scripts/strip-brand-studio.mjs",
+		"postbuild": "node scripts/strip-brand-studio.mjs && node scripts/strip-worker-redirects.mjs",
 		"build:validate": "npm run sync:brand && astro build && node scripts/strip-brand-studio.mjs && npm run validate:sitemaps",
 		"dev:stop": "astro dev stop",
 		"dev:status": "astro dev status",
